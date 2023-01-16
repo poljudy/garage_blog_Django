@@ -18,7 +18,18 @@ Here is the version history:
 
 ## Reminders
 
-To install django, `pip3 install 'django<4'`
+To install django, `pip3 install 'django<4' gunicorn`
+
+and `pip3 install dj_database_url==0.5.0 psycopg2`
+and `pip3 install dj3-cloudinary-storage`
+
+To create the essential manage.py file and the key step in enabling the site to launch
+use `django-admin startproject "put your appname here" .` don't forget the DOT at the end !!
+We used driverblog for our blog about cars and other vehicles.
+Don't forget the DOT at the end as this tells Django admin that we want to create our project in the current top level folder
+
+Then use `python3 manage.py startapp vehicles` for example, to create the vehicles app within the driverblog project
+And we update `settings.py` with details for the apps, hosts and secrets etc.
 
 Use `python3 manage.py runserver` to launch web server
 
