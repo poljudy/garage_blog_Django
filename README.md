@@ -14,7 +14,7 @@ Here is the version history:
 
 **Jan 1 2023:** Begin MVP planning.
 **Jan 23 2023:** Successful initial heroku deployment.
-
+ 
 ------
 
 ## Reminders
