@@ -2,7 +2,7 @@
 
 Welcome 
 
-This is the Code Institute student template 
+This is the Code Institute student PP4 readme for the project deployed to https://ib-driverblog-pp4.herokuapp.com/ 
 
 ------
 
@@ -13,6 +13,7 @@ We continually tweak and adjust this.
 Here is the version history:
 
 **Jan 1 2023:** Begin MVP planning.
+**Jan 23 2023:** Successful initial heroku deployment.
 
 ------
 
