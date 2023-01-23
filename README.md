@@ -52,6 +52,13 @@ import env
 
 To set up a app/database admin we need `python3 manage.py createsuperuser`
 
+To install the app in Heroku you need:
+
+1) Environment variables from env.py in your Heroku app settings
+2) A Procfile to run the webserver i.e. `web: gunicorn driverblog.wsgi` 
+    
+    in this case to run the driverblog app on the gunicorn wsgi webserver.
+
 To log into the Heroku toolbelt CLI:
 
 1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
