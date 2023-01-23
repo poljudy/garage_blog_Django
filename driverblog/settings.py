@@ -66,7 +66,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     # my apps
-    'driverblog',
+    'vehicles',
 ]
 
 MIDDLEWARE = [

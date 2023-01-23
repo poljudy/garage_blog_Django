@@ -58,7 +58,9 @@ To install the app in Heroku you need:
 1) Environment variables from env.py in your Heroku app settings
 2) A Procfile to run the webserver i.e. `web: gunicorn driverblog.wsgi` 
     
-    in this case to run the driverblog app on the gunicorn wsgi webserver.
+    in this case to run my driverblog app on the gunicorn wsgi webserver.
+
+The project can now be deployed to Heroku at the website configured above.
 
 To log into the Heroku toolbelt CLI:
 
