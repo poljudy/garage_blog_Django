@@ -2,7 +2,47 @@
 
 Welcome 
 
-This is the Code Institute student PP4 readme for the project deployed to https://ib-driverblog-pp4.herokuapp.com/ 
+This is the Code Institute student PP4 readme for the project deployed to https://ib-the-garage-pp4.herokuapp.com/ 
+
+# The Garage
+
+## Introduction
+The Garage is a website built in Django using Python, JavaScript, CSS and HTML. 
+It enables users to create and share car profiles with other users from around the world. 
+It is targeted towards users who enjoy their driving and would like to share their car profiles with others. 
+Users have the ability to create car profiles, and their own user profile. 
+They can upload images for use on their car profile or on their own profile, link their personal YouTube accounts and websites, and like and favourite other users cars.
+
+This is the fourth project for the Code Institute Diploma in Software Development with eCommerce.
+
+The site provides role based permissions for users to interact with a central dataset. 
+
+It includes user authentication, email validation, and Full CRUD functionality for Cars, components, stories and User Profiles.
+
+![Screenshot of homepage](./assets/screenshots/homepage.png)
+
+[View the live website on Heroku](https://ib-the-garage-pp4.herokuapp.com/)
+
+Note: To open any links in this README in a new browser tab, press CTRL + Click.
+
+## Table of Contents
+* [Features](#features)
+* [Future Enhancements](#future-enhancements)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [User Experience Design (UX)](#UX)
+* [Deployment](#deployment)
+* [Release History](#release-history)
+* [Reminders](#reminders)
+
+* [Credits](#credits)
+
+
+## Features
+#### Home page
+A homepage was built to welcome the user to the site and clearly convey the site’s purpose. 
+The call to action for the user to search for cars is at the top of the main page, with a large, hero like welcome message appearing just below. At the bottom of the page a clear comparison showing users the benefits of signing up to the site is displayed.
+
 
 ------
 
