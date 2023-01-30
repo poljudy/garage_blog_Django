@@ -41,8 +41,8 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
 ## Features
 #### Home page
 A homepage was built to welcome the user to the site and clearly convey the site’s purpose. 
-The call to action for the user to search for cars is at the top of the main page, with a large, hero like welcome message appearing just below. At the bottom of the page a clear comparison showing users the benefits of signing up to the site is displayed.
-
+The call to action for the user to search for cars is at the top of the main page, with a large hero message. 
+At the bottom of the page a clear list of the benefits of signing up is displayed.
 
 ------
 
