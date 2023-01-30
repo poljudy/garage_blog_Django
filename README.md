@@ -112,7 +112,7 @@ whitenoise==6.2.0
 * Git was utilised for version control and transferring files between the code editor and the repository
 * GitHub was utilised for storing the files for this project
 
-##Testing
+## Testing
 
 Testing was divided into different sections to ensure everything was tested individually with test cases developed for each area.
 
