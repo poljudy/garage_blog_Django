@@ -121,7 +121,7 @@ Testing was divided into different sections to ensure everything was tested indi
 
 [Testing Schedule Overview](/assets/testing/test-schedule.pdf)
 
-A full detailed breakdown of the testing procedures and methodology can be found in the testing.md file [here](/assets/testing/TESTING.md)
+Details of the [testing](/assets/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/assets/testing/TESTING.md)
 
 
 ## UX
@@ -130,7 +130,8 @@ A full detailed breakdown of the testing procedures and methodology can be found
 
 *  The Garage is intended to be a friendly community site for users to create and share their own cars with others. Users will also be able to find cars created by other users from around the world. The graphical elements and overall design of the site provide the user with a fun and enjoyable environment.
 
-A full detailed breakdown of the UX methodology can be found in the UX.md file [here](/assets/docs/UX.md)
+A [Full detailed breakdown](/assets/docs/UX.md) of the [UX and wireframes](/assets/docs/UX.md) methodology can be found in the UX.md file [here](/assets/docs/UX.md)
+[Wireframes are here!](/assets/docs/UX.md)
 
 ## Deployment
 * [Back to table of contents](#table-of-contents) 
