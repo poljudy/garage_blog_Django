@@ -92,7 +92,7 @@ whitenoise==6.2.0
     * Django was used as the main python framework in the development of this project
     * Django AllAuth was utilised to provide enhanced user account management functionality.
 * Heroku
-    * Was used as the cloud based platform to deploy the site to https://ib-driverblog-pp4.herokuapp.com/ 
+    * Was used as the cloud based platform to deploy the site to https://ib-the-garage-pp4.herokuapp.com/
 * ElephantSQL PostgreSQL
     * ElephantSQL PostgreSQL was used as the database for this project during development and in production.
 * JavaScript
@@ -133,7 +133,7 @@ A full detailed breakdown of the UX methodology can be found in the UX.md file [
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#the-garage) 
 
-The site was deployed via Heroku, and the live link can be found here - [The Garage](https://pp4-the-Garage.herokuapp.com/)
+The site was deployed via Heroku, and the live link can be found here - [The Garage](https://ib-the-garage-pp4.herokuapp.com/)
 
 ### Project Deployment
 
