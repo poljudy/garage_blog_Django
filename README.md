@@ -13,7 +13,7 @@ It is targeted towards users who enjoy their driving and would like to share the
 Users have the ability to create car profiles, and their own user profile. 
 They can upload images for use on their car profile or on their own profile, link their personal YouTube accounts and websites, and like and favourite other users cars.
 
-This is the fourth project for the Code Institute Diploma in Software Development with eCommerce.
+This is the fourth project for the Code Institute Diploma in Software Development (E-commerce Applications).
 
 The site provides role based permissions for users to interact with a central dataset. 
 
