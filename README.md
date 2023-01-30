@@ -55,6 +55,7 @@ There are a few enhancements to functionality that I would like to add in the fu
 The key enhancements I would like to add to the site in the future are:
 * The ability for users to message other users
 * The ability for users to login via social networks such as google or facebook
+* The ability for users to book service appointments with an experienced local mechanic at better rates than dealers
 
 Some of the functionality above is provided by allauth which is already installed into the site.
 So it only has to be setup in order for it to function. 
