@@ -68,15 +68,26 @@ I have left the original user stories that were developed in the project Kanban 
 
 * Python
     * The following python modules were used on this project:
-
-        * cloudinary==1.29.0
-        * dj-database-url==0.5.0
-        * dj3-cloudinary-storage==0.0.6
-        * Django==3.2
-        * django-allauth==0.48.0
-        * gunicorn==20.1.0
-        * psycopg2==2.9.3
-
+```
+asgiref==3.6.0
+cloudinary==1.30.0
+dj-database-url==0.5.0
+dj3-cloudinary-storage==0.0.6
+Django==3.2.16
+django-allauth==0.52.0
+django-crispy-forms==1.14.0
+django-heroku==0.3.1
+django-summernote==0.8.20.0
+gunicorn==20.1.0
+oauthlib==3.2.2
+psycopg2==2.9.5
+PyJWT==2.6.0
+python3-openid==3.2.0
+pytz==2022.7
+requests-oauthlib==1.3.1
+sqlparse==0.4.3
+whitenoise==6.2.0
+```
 * Django
     * Django was used as the main python framework in the development of this project
     * Django AllAuth was utilised to provide enhanced user account management functionality.
