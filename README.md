@@ -47,6 +47,8 @@ A homepage was built to welcome the user to the site and clearly convey the site
 The call to action for the user to search for cars is at the top of the main page, with a large hero message. 
 At the bottom of the page a clear list of the benefits of signing up is displayed.
 
+Public domain images were found on https://www.pexels.com/search/car%20webp/
+
 ------
 
 ## Future Enhancments
