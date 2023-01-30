@@ -1,9 +1,11 @@
-# Test Cases and Execution Report
+# Testing
+## Test Cases and Execution Report
 
-To return to the main README click [here](README.md)
-* [Back to main table of contents](#table-of-contents) 
-* [Back to top of README.md](#the-garage) 
+To return to the main README click [here](/README.md)
+* [Back to main table of contents](#testing-toc) 
+* [Back to top of TESTING.md](#testing) 
 
+## Testing TOC
 
 The full testing spreadsheet containing all the tests performed during the testing phase of development can be found [here](/assets/testing/test-schedule.pdf)
 
