@@ -143,7 +143,7 @@ The site was deployed via Heroku, and the live link can be found here - [The Gar
 To deploy the project through Heroku I followed these steps:
 * Sign up / Log in to [Heroku](https://www.heroku.com/)
 * From the main Heroku Dashboard page select 'New' and then 'Create New App'
-* Give the project a name - I entered The-Garage and select a suitable region, then select create app. The name for the app must be unique.
+* Give the project a name - I used ib-the-garage-pp4 and select a suitable region, then select create app. The name for the app must be unique.
 * This will create the app within Heroku and bring you to the deploy tab. From the submenu at the top, navigate to the resources tab.
 * Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database
 * Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
