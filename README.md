@@ -127,7 +127,7 @@ A full detailed breakdown of the testing procedures and methodology can be found
 
 *  The Garage is intended to be a friendly community site for users to create and share their own cars with others. Users will also be able to find cars created by other users from around the world. The graphical elements and overall design of the site provide the user with a fun and enjoyable environment.
 
-A full detailed breakdown of the UX methodology can be found in the UX.md file [here](UX.md)
+A full detailed breakdown of the UX methodology can be found in the UX.md file [here](/assets/docs/UX.md)
 
 ## Deployment
 * [Back to table of contents](#table-of-contents) 
