@@ -43,7 +43,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
-ALLOWED_HOSTS = ['ib-driverblog-pp4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ib-the-garage-pp4.herokuapp.com', 'localhost']
 
 
 # Application definition
