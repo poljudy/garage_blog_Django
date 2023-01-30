@@ -39,6 +39,9 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
 
 
 ## Features
+* [Back to index](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
+
 #### Home page
 A homepage was built to welcome the user to the site and clearly convey the site’s purpose. 
 The call to action for the user to search for cars is at the top of the main page, with a large hero message. 
@@ -47,6 +50,8 @@ At the bottom of the page a clear list of the benefits of signing up is displaye
 ------
 
 ## Release History
+* [Back to index](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
 
 We continually tweak and adjust this.
 
@@ -58,6 +63,8 @@ Here is the version history:
 ------
 
 ## Reminders
+* [Back to index](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
 
 To install django, `pip3 install 'django<4' gunicorn`
 
@@ -120,3 +127,6 @@ Yes! We'd strongly encourage you to look at the source code!
 ---
 
 Happy coding!
+* [Back to index](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
+
