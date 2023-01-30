@@ -15,7 +15,7 @@ They can upload images for use on their car profile or on their own profile, lin
 
 This is the fourth project for the Code Institute Diploma in Software Development (E-commerce Applications).
 
-The site provides role based permissions for users to interact with a central dataset. 
+The site provides role based permissions for users to interact with an SQL database. 
 
 It includes user authentication, email validation, and Full CRUD functionality for Cars, components, stories and User Profiles.
 
@@ -33,9 +33,9 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
 * [User Experience Design (UX)](#ux)
 * [Deployment](#deployment)
 * [Release History](#release-history)
+* [Credits](#credits)
 * [Reminders](#reminders)
 
-* [Credits](#credits)
 
 
 ## Features
@@ -131,6 +131,7 @@ Details of the [testing](/assets/testing/TESTING.md) procedures and methodology 
 *  The Garage is intended to be a friendly community site for users to create and share their own cars with others. Users will also be able to find cars created by other users from around the world. The graphical elements and overall design of the site provide the user with a fun and enjoyable environment.
 
 A [Full detailed breakdown](/assets/docs/UX.md) of the [UX and wireframes](/assets/docs/UX.md) methodology can be found in the UX.md file [here](/assets/docs/UX.md)
+
 [Wireframes are here!](/assets/docs/UX.md)
 
 ## Deployment
@@ -208,9 +209,28 @@ We continually tweak and adjust this.
 Here is the version history:
 
 **Jan 1 2023:** Begin MVP planning.
+
 **Jan 23 2023:** Successful initial heroku deployment.
  
 ------
+
+
+## Credits
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
+
+![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
+-   ### Source code
+
+    - Code Institute Django course material, tutors, mentors and colleagues in Slack channels.
+    - Bootstrap documentation https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
+    
+-   ### Images
+    - Car images https://www.pexels.com/ 
+    - favicon.ico generation https://favicon.io/favicon-generator/
+    - Colors from [Lilybug Design](https://www.lilybugdesign.co.nz/procreate-color-palettes)
+
 
 ## Reminders
 * [Back to table of contents](#table-of-contents) 
