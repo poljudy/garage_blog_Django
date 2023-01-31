@@ -1,11 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<section>
+    {% if user.is_authenticated %}
+    {% if profile.username %}
+    <div class="primary-action btn not-btn">Hi {{profile.username}}</div>
+    {% else %}
+    <div class="primary-action btn not-btn">Hi Anonymous</div>
+    {% endif %}
+    {% else %}
+    <a href="{% url 'account_signup' %}" class="primary-action btn">Register Now</a>
+    {% endif %}
+</section>
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Driver Blog Vehicle Entries Column -->
+        <!-- Garage Blog Vehicle Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
