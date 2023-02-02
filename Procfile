@@ -1,1 +1,1 @@
-web: gunicorn driverblog.wsgi
+web: gunicorn garageblog.wsgi
