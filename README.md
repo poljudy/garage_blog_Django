@@ -124,6 +124,30 @@ Testing was divided into different sections to ensure everything was tested indi
 Details of the [testing](/assets/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/assets/testing/TESTING.md)
 
 
+### Bugs of note
+
+It is difficult to enforce input validation to image file types. 
+Enforcing the file types within the cloudinary documentation was not found. 
+This enabled users to upload non-image file types. 
+To address this issue, within the view that handles the form submission, I may try a try, except statement that attempts to upload the file. If the upload fails due to the file type error on the cloudinary servers, it handles the error and provides the user with an error message informing them what happened and why. 
+This prevents users from breaking the functionality of the site, whilst still enabling them to correct the file they are trying to upload.
+
+### Development bugs: 
+
+#### fixed 
+
+user.username to author comparison did not work with user.username == post.author so found i had to compare user == post.author not user.username.
+
+Thanks to this post
+https://stackoverflow.com/questions/43879330/djangounable-to-compare-the-logged-in-user-with-the-author-of-the-post 
+
+No other bugs of note were found during development of the site. 
+Several minor bugs were encountered due to small logic mistakes or unexpected scenarios
+These were found during the several rounds of testing and corrected. 
+
+There are no known bugs left in the site.
+
+
 ## UX
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#the-garage) 
