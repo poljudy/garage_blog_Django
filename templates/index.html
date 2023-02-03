@@ -3,8 +3,8 @@
 {% block content %}
 <section>
     {% if user.is_authenticated %}
-    {% if profile.username %}
-    <div class="primary-action btn not-btn">Hi {{profile.username}}</div>
+    {% if user.username %}
+    <div class="primary-action btn not-btn">Hi {{user.username}}</div>
     {% else %}
     <div class="primary-action btn not-btn">Hi Anonymous</div>
     {% endif %}

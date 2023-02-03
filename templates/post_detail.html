@@ -33,6 +33,30 @@
                 <p class="card-text ">
                     {{ post.content | safe }}
                 </p>
+                <span>
+                {% if user.is_authenticated %}
+
+                <h3>Edit Post:</h3>
+                <p>Editing as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ post_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup btn-lg">Edit</button>
+                </form>
+
+                {% endif %}
+                {% if user.is_authenticated %}
+
+                <h3>Delete Post:</h3>
+                <p>Deleting as: {{ user.username }}</p>
+                <a href="{% url 'delete' post.id %}">
+                    <button type="submit" class="btn btn-signup btn-lg">Delete</button>
+                </a>
+
+                {% endif %}
+                </span>
+                <br>
+
                 <div class="row">
 
                     <div class="col-1">

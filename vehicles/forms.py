@@ -1,5 +1,5 @@
-from .models import Comment, Post
 from django import forms
+from .models import Comment, Post
 
 
 class CommentForm(forms.ModelForm):
@@ -25,6 +25,8 @@ class PostForm(forms.ModelForm):
             'excerpt',
             'content',
             'status',
-            'likes',                        
+            'likes',
         )
 
+        def __init__(self, *args, **kwargs):
+            super(PostForm, self).__init__(*args, **kwargs)
