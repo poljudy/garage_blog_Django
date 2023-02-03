@@ -43,11 +43,14 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
 * [Back to top of README.md](#the-garage) 
 
 #### Home page
-A homepage was built to welcome the user to the site and clearly convey the site’s purpose. 
-The call to action for the user to search for cars is at the top of the main page, with a large hero message. 
-At the bottom of the page a clear list of the benefits of signing up is displayed.
+A homepage was built to welcome the user to the site and clearly convey the site’s purpose with some interesting initial posts.
 
 Public domain images were found on https://www.pexels.com/search/car%20webp/
+
+#### Deleting posts
+Got post deletion working, although need to add "Are you sure?" logic
+
+Thanks to this post https://stackoverflow.com/questions/51781841/delete-a-post-in-django 
 
 ------
 
