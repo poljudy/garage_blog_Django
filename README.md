@@ -48,7 +48,7 @@ A homepage was built to welcome the user to the site and clearly convey the site
 Public domain images were found on https://www.pexels.com/search/car%20webp/
 
 #### Deleting posts
-Got post deletion working, although need to add "Are you sure?" logic
+Got post deletion working, although need to add "Are you sure?" logic"
 
 Thanks to this post https://stackoverflow.com/questions/51781841/delete-a-post-in-django 
 
