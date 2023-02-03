@@ -5,6 +5,8 @@ from .views import post_vehicle_view
 
 urlpatterns = [
     path("", views.PostList.as_view(), name="home"),
+#    path("admin2", views.admin.as_view(), name="admin2"),
+#    path("admin/vehicles/post", admin.vehicles.post.as_view(), name="admin_post"),    # noqa
     path('delete/<post_id>', views.delete_post, name='delete'),
     path('post_vehicle_view/', post_vehicle_view, name='post_vehicle_view'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
