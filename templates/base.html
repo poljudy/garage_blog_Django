@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
- 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -50,21 +50,24 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="{% url 'home' %}" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Vehicles
+                        </a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-white" href="{% url 'home' %}">List</a>
+                            <a class="dropdown-item text-white" href="{% url 'post_vehicle_view' %}">Add</a>
+                            <a class="dropdown-item text-white" href="{% url 'post_vehicle_view' %}">Search</a>
+                            <!--<a class="dropdown-item text-white" href="#">Something else here</a>
+                          <a class="dropdown-item text-white" href="#">Something else here</a> -->
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Search</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'post_vehicle_view' %}">Add Car</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Admin</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="{% url 'home' %}">Admin Post</a>
-                    </li>
+
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
