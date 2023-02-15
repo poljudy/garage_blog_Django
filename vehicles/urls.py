@@ -9,7 +9,8 @@ urlpatterns = [
 #    path("admin/vehicles/post", admin.vehicles.post.as_view(), name="admin_post"),    # noqa
     path('delete/<post_id>', views.delete_post, name='delete'),
     path('post_vehicle/', views.post_vehicle, name='post_vehicle'),
-    path('post_vehicle_view/', views.post_vehicle_view, name='post_vehicle_view'),
+    path('add_vehicle/', views.addVehicle, name='add_vehicle'),
+    path('post_vehicle_view/', views.post_vehicle_view, name='post_vehicle_view'),  # noqa
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
 

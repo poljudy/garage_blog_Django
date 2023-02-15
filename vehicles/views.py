@@ -4,6 +4,8 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostVehicleForm, VehicleForm
 from .forms import SparePartForm, PostForm
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 class PostList(generic.ListView):
@@ -144,3 +146,25 @@ def post_vehicle(request):
     else:
         form = PostVehicleForm()
     return render(request, 'post_vehicle.html', {'form': form})
+
+
+@login_required
+def addVehicle(request):
+
+    if request.method == 'POST':
+
+        form = VehicleForm(request.POST)
+
+        if form.is_valid():
+            vehicle = form.save(commit=False)
+
+            vehicle.save()
+            messages.success(request, 'Your vehicle post was created successfully!')  # noqa
+            return render(request, '')
+            return redirect(vehicle.get_update_url())
+    else:
+        form = VehicleForm()
+
+    return render(request, 'PostVehicleForm.html', {'form': form})
+
+    messages.error(request, 'At the end!')
