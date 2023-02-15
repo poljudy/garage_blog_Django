@@ -160,7 +160,7 @@ def addVehicle(request):
 
             vehicle.save()
             messages.success(request, 'Your vehicle post was created successfully!')  # noqa
-            return render(request, '')
+            return render(request, 'index.html')
             return redirect(vehicle.get_update_url())
     else:
         form = VehicleForm()
