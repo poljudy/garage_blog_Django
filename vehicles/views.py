@@ -151,11 +151,12 @@ def post_vehicle(request):
 @login_required
 def addVehicle(request):
 
+    form = VehicleForm(request.POST or None, request.FILES or None)
+
     if request.method == 'POST':
-
-        form = VehicleForm(request.POST)
-
+        form = VehicleForm(request.POST, request.FILES)
         if form.is_valid():
+
             vehicle = form.save(commit=False)
 
             vehicle.save()
