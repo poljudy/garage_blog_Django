@@ -74,7 +74,7 @@ def delete_post(request, post_id=None):
 
 class PostVehicle(View):
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request, slug="big-car/", *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, pk=1)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -84,14 +84,14 @@ class PostVehicle(View):
 
         return render(
             request,
-            "post_vehicle.html",
+            "templates/post_vehicle.html",
             {
                 "post": post,
                 "comment_form": comment_form,
             },
         )
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request, slug="big-car/", *args, **kwargs):
         """
         Users can post their vehicle
         """
@@ -103,7 +103,7 @@ class PostVehicle(View):
 
         return render(
             request,
-            "post_vehicle.html",
+            "templates/post_vehicle.html",
             {
                 "post": post,
                 "comment_form": comment_form,
@@ -132,3 +132,14 @@ def post_vehicle_view(request):
     else:
         form = PostVehicleForm()
     return render(request, 'PostVehicleForm.html', {'form': form})
+
+
+def post_vehicle(request):
+    if request.method == 'POST':
+        form = PostVehicleForm(request.POST)
+        if form.is_valid():
+            # do something with the form data
+            return render(request, 'index.html')
+    else:
+        form = PostVehicleForm()
+    return render(request, 'post_vehicle.html', {'form': form})
