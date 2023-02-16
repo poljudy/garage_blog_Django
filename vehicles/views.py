@@ -158,7 +158,7 @@ def addVehicle(request):
         if form.is_valid():
 
             vehicle = form.save(commit=False)
-
+            vehicle.author = request.user
             vehicle.save()
             messages.success(request, 'Your vehicle post was created successfully!')  # noqa
             return render(request, 'index.html')
