@@ -2,6 +2,7 @@
 
 {% block content %}
 <section>
+    <h1>Welcome to the #1 vehicle enthusiasts Garage|Blog site! All welcome to post and comment!</h1>
     {% if user.is_authenticated %}
     {% if user.username %}
     <div class="primary-action btn not-btn">Hi {{user.username}}</div>
@@ -9,7 +10,7 @@
     <div class="primary-action btn not-btn">Hi Anonymous</div>
     {% endif %}
     {% else %}
-    <a href="{% url 'account_signup' %}" class="primary-action btn">Register Now</a>
+    <a href="{% url 'account_signup' %}" class="primary-action btn">Sign up Now, and contribute your own posts and comments!</a>
     {% endif %}
 </section>
 <div class="container-fluid">
@@ -25,7 +26,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" alt="placeholder image" height="30%" width="30%"
-                                    src="https://images.pexels.com/photos/11941023/pexels-photo-11941023.jpeg?auto=compress&cs=tinysrgb&h=600&dpr=1">
+                                    src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp">
                                 {% else %}
                                 <img class="card-img-top" alt="main post image" height="30%" width="30%" src=" {{ post.featured_image.url }}">
                                 {% endif %}
