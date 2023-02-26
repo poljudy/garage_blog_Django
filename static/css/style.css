@@ -100,7 +100,7 @@ body {
     color: white;
 }
 
-.post-link:hover,
+.post-link:hover, .posthead-link:hover, 
 .page-link {
     color: #E84610;
 }
