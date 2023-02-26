@@ -2,7 +2,10 @@
 
 {% block content %}
 <section>
-    <h1>Welcome to the #1 vehicle enthusiasts Garage|Blog site! All welcome to post and comment!</h1>
+    <h1>Welcome to <span class="brand">The <span
+        class="red-letter">G</span>arage<span class="thin">|blog</span></span></span> ! </h1>
+    <h2>The #1 site for vehicle enthusiasts.</h2>
+    <h3>All welcome to post and comment...</h3>
     {% if user.is_authenticated %}
     {% if user.username %}
     <div class="primary-action btn not-btn">Hi {{user.username}}</div>
@@ -10,6 +13,7 @@
     <div class="primary-action btn not-btn">Hi Anonymous</div>
     {% endif %}
     {% else %}
+    <a href="{% url 'account_login' %}" class="primary-action btn">Login or </a><br>
     <a href="{% url 'account_signup' %}" class="primary-action btn">Sign up Now, and contribute your own posts and comments!</a>
     {% endif %}
 </section>
