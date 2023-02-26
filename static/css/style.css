@@ -95,6 +95,11 @@ body {
     color: #445261;
 }
 
+.posthead-link {
+    text-decoration: none;
+    color: white;
+}
+
 .post-link:hover,
 .page-link {
     color: #E84610;
