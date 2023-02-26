@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <h1>Error - page not found! </h1>
+    {% if user.is_authenticated %}
+    {% if user.username %}
+    <div class="primary-action btn not-btn">Hi {{user.username}}</div>
+    {% else %}
+    <div class="primary-action btn not-btn">Hi Anonymous</div>
+    {% endif %}
+    {% else %}
+    <a href="{% url 'account_signup' %}" class="primary-action btn">Sign up Now, and contribute your own posts and comments!</a>
+    {% endif %}
+</section>
+
+{%endblock%}
