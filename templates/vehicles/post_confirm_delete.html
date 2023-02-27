@@ -4,11 +4,11 @@
 {% block content %}
 
 <section class="account-container p-2 mt-2 mx-2"> 
-    <div id="post-vehicle">
+    <div id="delete-vehicle">
         <h2>Please confirm your post deletion !</h2>
 
         <div class="form-container p-2 mt-2">
-            <form class="add-vehicle-form" action="." method="POST" enctype="multipart/form-data">
+            <form method="POST">
                 {% csrf_token %}
                 <fieldset class="form-group">
                     <legend class="border-bottom mb4">Warning - Deleting Post</legend>
