@@ -161,8 +161,8 @@ def addVehicle(request):
             vehicle.author = request.user
             vehicle.save()
             messages.success(request, 'Your vehicle post was created successfully!')  # noqa
-            return render(request, 'index.html')
-            return redirect(vehicle.get_update_url())
+            return HttpResponseRedirect(reverse('home'))
+
     else:
         form = VehicleForm()
 
