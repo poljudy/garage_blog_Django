@@ -1,12 +1,14 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic import CreateView, ListView, DetailView
+from django.views.generic import (
+    CreateView, ListView, DetailView, UpdateView, DeleteView)
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostVehicleForm, VehicleForm
 from .forms import SparePartForm, PostForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 
 class PostList(generic.ListView):
@@ -170,7 +172,7 @@ def addVehicle(request):
     return render(request, 'PostVehicleForm.html', {'form': form})
 
 
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     fields = [
         'title', 'slug', 'featured_image', 'excerpt', 'content',
@@ -181,3 +183,35 @@ class PostCreateView(CreateView):
         return super().form_valid(form)
 
 
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Post
+    fields = [
+        'title', 'slug', 'featured_image', 'excerpt', 'content',
+        'status', 'youtube_link']
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
+
+
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Post
+    fields = [
+        'title', 'slug', 'featured_image', 'excerpt', 'content',
+        'status', 'youtube_link']
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+<section class="account-container p-2 mt-2 mx-2"> 
+    <div id="post-vehicle">
+        <h2>Please confirm your post deletion !</h2>
+
+        <div class="form-container p-2 mt-2">
+            <form class="add-vehicle-form" action="." method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb4">Warning - Deleting Post</legend>
+                    <h2>Are you sure you want to delete post "{{ object.title }}"</h2>
+                    </fieldset>
+                
+                <button class="btn btn-outline-danger primary-action mt-2" type="submit">Yes, Delete!</button>
+                <a class="btn btn-outline-success mt-2" href="{% url 'home' %}">Cancel</a>
+                <a class="btn btn-outline-secondary mt-2" href="/">Home Page</a>
+            </form>
+                        
+        </div>
+         
+    </div>
+
+{% endblock %}

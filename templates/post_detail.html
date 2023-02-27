@@ -48,9 +48,8 @@
                             <button type="submit" class="btn btn-signup btn-lg">Edit</button>
                         </form>
 
-
                         <h3>Delete Post as: {{ user.username }}:</h3>
-                        <a href="{% url 'delete' post.id %}">
+                         <a href="{% url 'post_delete' post.slug %}"> 
                             <button type="submit" class="btn btn-signup btn-lg">Delete</button>
                         </a>
                     {% endif %}

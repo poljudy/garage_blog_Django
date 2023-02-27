@@ -3,6 +3,8 @@ from django.urls import path
 from .views import (
     post_vehicle_view,
     PostCreateView,
+    PostUpdateView,
+    PostDeleteView,
     PostList,
     PostDetail,
     PostLike,
@@ -23,6 +25,8 @@ urlpatterns = [
     path('post/new/', PostCreateView.as_view(), name='post-create'),
     path('post_vehicle_view/', post_vehicle_view, name='post_vehicle_view'),  # noqa
     path('<slug:slug>/', PostDetail.as_view(), name='post_detail'),
+    path('<slug:slug>/update', PostUpdateView.as_view(), name='post_update'),
+    path('<slug:slug>/delete', PostDeleteView.as_view(), name='post_delete'),
     path('like/<slug:slug>', PostLike.as_view(), name='post_like'),
 
 

@@ -35,7 +35,7 @@ class Post(models.Model):
         return self.likes.count()
 
     def get_absolute_url(self):
-	    return reverse('home')
+        return reverse('home')
 
 
 class Comment(models.Model):
@@ -78,6 +78,9 @@ class Vehicle(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
+
+    def get_absolute_url(self):
+        return reverse('home')
 
 
 class SparePart(models.Model):
