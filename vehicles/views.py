@@ -172,7 +172,9 @@ def addVehicle(request):
 
 class PostCreateView(CreateView):
     model = Post
-    fields = ['title', 'slug', 'content']
+    fields = [
+        'title', 'slug', 'featured_image', 'excerpt', 'content',
+        'status', 'youtube_link']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
