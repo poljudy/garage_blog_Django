@@ -101,6 +101,8 @@ whitenoise==6.2.0
     * Was used as the cloud based platform to deploy the site to https://ib-the-garage-pp4.herokuapp.com/
 * ElephantSQL PostgreSQL
     * ElephantSQL PostgreSQL was used as the database for this project during development and in production.
+* Cloudinary Storage
+    * Cloudinary Storage was used as the cloud storage of images and icons for this project during development and in production. Had to also use this for favicon.ico instead of static data when deployed to Heroku.
 * JavaScript
     * Custom JavaScript was utilised to enable .
 * Bootstrap 5.13
@@ -145,7 +147,13 @@ Thanks to this post
 https://stackoverflow.com/questions/43879330/djangounable-to-compare-the-logged-in-user-with-the-author-of-the-post 
 
 No other bugs of note were found during development of the site. 
-Several minor bugs were encountered due to small logic mistakes or unexpected scenarios
+
+Several minor bugs were encountered due to small logic mistakes or unexpected scenarios.
+
+For example, I was missing enctype="multipart/form-data" in my form attributes for creating a post.
+So the form was not uploading the image selected by the user.
+Once that was in, all is well, and my users are no longer seeing placeholders.
+
 These were found during the several rounds of testing and corrected. 
 
 There are no known bugs left in the site.
