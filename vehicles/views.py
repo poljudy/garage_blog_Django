@@ -209,14 +209,3 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         if self.request.user == post.author:
             return True
         return False
-
-
-'''
-    fields = [
-        'title', 'slug', 'featured_image', 'excerpt', 'content',
-        'status', 'youtube_link']
-
-    def form_valid(self, form):
-        form.instance.author = self.request.user
-        return super().form_valid(form)
-'''
