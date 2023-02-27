@@ -47,12 +47,12 @@ class VehicleForm(forms.ModelForm):
         fields = (
             'title',
             'slug',
-#           'author',
+            # 'author',
             'featured_image',
             'excerpt',
             'content',
             'status',
-#           'likes',
+            # 'likes',
             'youtube_link',
         )
 

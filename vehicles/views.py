@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic import CreateView, ListView, DetailView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostVehicleForm, VehicleForm
@@ -168,4 +169,13 @@ def addVehicle(request):
 
     return render(request, 'PostVehicleForm.html', {'form': form})
 
-    messages.error(request, 'At the end!')
+
+class PostCreateView(CreateView):
+    model = Post
+    fields = ['title', 'slug', 'content']
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+
