@@ -20,7 +20,7 @@
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp" alt="placeholder" width="50%">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%" alt="post image" >
+                <img src=" {{ post.featured_image.url }}" width="50%" alt="post image" >
                 {% endif %}
             </div>
         </div>
@@ -41,16 +41,13 @@
                     {% if user ==  post.author %}
                         <h3>Edit Post as: {{ user.username }}</h3>
                         <p>Author is: {{ post.author }}</p>
-                        
-                        <form method="post" style="margin-top: 1.3em;">
-                            {{ post_form | crispy }}
-                            {% csrf_token %}
+                        <a href="{% url 'post_update' post.slug %}"> 
                             <button type="submit" class="btn btn-signup btn-lg">Edit</button>
-                        </form>
+                        </a>
 
                         <h3>Delete Post as: {{ user.username }}:</h3>
                          <a href="{% url 'post_delete' post.slug %}"> 
-                            <button type="submit" class="btn btn-signup btn-lg">Delete</button>
+                            <button type="submit" class="btn btn-danger btn-lg">Delete</button>
                         </a>
                     {% endif %}
                 {% endif %}

@@ -78,6 +78,7 @@ def delete_post(request, post_id=None):
     return HttpResponseRedirect(reverse('home'))
 
 
+'''
 class PostVehicle(View):
 
     def get(self, request, slug="big-car/", *args, **kwargs):
@@ -115,6 +116,7 @@ class PostVehicle(View):
                 "comment_form": comment_form,
             },
         )
+'''
 
 
 class PostLike(View):
@@ -186,11 +188,13 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
     fields = [
-        'title', 'slug', 'featured_image', 'excerpt', 'content',
+        'title', 'featured_image', 'excerpt', 'content',
         'status', 'youtube_link']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        post = self.get_object()
+        form.instance.slug = post.slug
         return super().form_valid(form)
 
     def test_func(self):
