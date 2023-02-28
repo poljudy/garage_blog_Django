@@ -8,7 +8,11 @@ from .forms import CommentForm, PostVehicleForm, VehicleForm
 from .forms import SparePartForm, PostForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import (
+    LoginRequiredMixin,
+    UserPassesTestMixin
+    )
 
 
 class PostList(generic.ListView):
@@ -185,7 +189,12 @@ class PostCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class PostUpdateView(
+    LoginRequiredMixin,
+    UserPassesTestMixin,
+    SuccessMessageMixin,
+    UpdateView
+        ):
     model = Post
     fields = [
         'title', 'featured_image', 'excerpt', 'content',
@@ -202,6 +211,9 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         if self.request.user == post.author:
             return True
         return False
+
+    def get_success_message(self, cleaned_data):
+        return "%(id)s updated created successfully" % {'id': self.object.id}  # noqa
 
 
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
