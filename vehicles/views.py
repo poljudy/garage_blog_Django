@@ -8,6 +8,7 @@ from .forms import CommentForm, PostVehicleForm, VehicleForm
 from .forms import SparePartForm, PostForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.utils import timezone
 from django.utils.text import slugify
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import (
@@ -18,7 +19,7 @@ from django.contrib.auth.mixins import (
 
 class Text:
     #  https://lookaway.info/zine/information/prepopulate-a-form-field-using-slugs-and-integers-django-20210410/
-
+ 
     def slugify_unique(model, title):
         '''
         Given a DB model and a title, return a unique slug that is unique \

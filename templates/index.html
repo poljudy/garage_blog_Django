@@ -29,10 +29,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" alt="placeholder image" height="30%" width="30%"
+                                <img class="card-img-top" alt="placeholder image"
                                     src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp">
                                 {% else %}
-                                <img class="card-img-top" alt="main post image" height="30%" width="30%" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" alt="main post image" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>

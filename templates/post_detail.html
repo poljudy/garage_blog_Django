@@ -18,9 +18,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp" alt="placeholder" width="50%">
+                <img class="img-fluid mx-auto" src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp" alt="placeholder" width="50%">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="50%" alt="post image" >
+                <img src=" {{ post.featured_image.url }}" class="img-fluid mx-auto" alt="post image" >
                 {% endif %}
             </div>
         </div>
