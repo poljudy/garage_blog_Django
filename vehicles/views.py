@@ -19,7 +19,7 @@ from django.contrib.auth.mixins import (
 
 class Text:
     #  https://lookaway.info/zine/information/prepopulate-a-form-field-using-slugs-and-integers-django-20210410/
- 
+
     def slugify_unique(model, title):
         '''
         Given a DB model and a title, return a unique slug that is unique \
@@ -252,7 +252,9 @@ class PostUpdateView(
         return False
 
     def get_success_message(self, cleaned_data):
-        return "%(id)s updated created successfully" % {'id': self.object.id}  # noqa
+        return "%(slug)s updated successfully" % {'slug': self.object.slug}  # noqa
+#       return "Post updated successfully"   # noqa
+#       return "%(id)s updated created successfully" % {'id': self.object.id}  # noqa
 
 
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
