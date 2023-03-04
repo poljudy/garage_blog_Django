@@ -2,17 +2,17 @@
 
 Welcome 
 
-This is the Code Institute student PP4 readme for the project deployed to [https://ib-the-garage-pp4.herokuapp.com/](https://ib-the-garage-pp4.herokuapp.com/){:target="_blank" rel="noopener"}
+This is the Code Institute student PP4 readme for the project deployed to [https://ib-the-garage-pp4.herokuapp.com/](https://ib-the-garage-pp4.herokuapp.com/)
 
 # The Garage
 
 ### - By Ian Bowell
 
-## **[Live site](https://ib-the-garage-pp4.herokuapp.com/){:target="_blank" rel="noopener"}**
+## **[Live site](https://ib-the-garage-pp4.herokuapp.com/)**
 
 ---
 
-## **[Repository](https://github.com/ian-IBCIRL/IB-PP4-MVP/){:target="_blank" rel="noopener"}**
+## **[Repository](https://github.com/ian-IBCIRL/IB-PP4-MVP/)**
 
 ## Introduction
 The Garage is a website built in Django using Python, JavaScript, CSS and HTML. 
