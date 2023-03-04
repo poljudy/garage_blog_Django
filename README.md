@@ -6,18 +6,34 @@ This is the Code Institute student PP4 readme for the project deployed to https:
 
 # The Garage
 
+### - By Ian Bowell
+
+## **[Live site](https://ib-the-garage-pp4.herokuapp.com/)**
+
+---
+
+## **[Repository](https://github.com/ian-IBCIRL/IB-PP4-MVP/)**
+
 ## Introduction
 The Garage is a website built in Django using Python, JavaScript, CSS and HTML. 
-It enables users to create and share car profiles with other users from around the world. 
-It is targeted towards users who enjoy their driving and would like to share their car profiles with others. 
-Users have the ability to create car profiles, and their own user profile. 
-They can upload images for use on their car profile or on their own profile, link their personal YouTube accounts and websites, and like and favourite other users cars.
+It enables users to create and share vehicle with other users from around the world. 
+It is targeted towards users who enjoy their vehicles and would like to share their vehicle posts with others. 
+I have explicitly and intentionally not limited the site to just cars, hence allowing any vehicle.
+
+Users have the ability to create, update, read and delete their own vehicle posts.
+They can upload images for their vehicle post, link YouTube videos of their vehicle and websites. 
+They can also like and unlike other users vehicle posts.
+
+---
+In future I may add user profiles, and the ability to update and delete their own user profile. 
 
 This is the fourth project for the Code Institute Diploma in Software Development (E-commerce Applications).
 
 The site provides role based permissions for users to interact with an SQL database. 
 
-It includes user authentication, email validation, and Full CRUD functionality for Cars, components, stories and User Profiles.
+It includes user authentication and Full CRUD functionality for Vehicle posts.
+
+In future, I may add tables for components, stories, email verification, social media loging and User Profiles.
 
 ![Screenshot of homepage](./assets/screenshots/homepage.png)
 
