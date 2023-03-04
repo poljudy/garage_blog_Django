@@ -50,6 +50,7 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
 * [Technologies Used](#technologies-used)
+* [Agile Development](#agile)
 * [Testing](#testing)
 * [User Experience Design (UX)](#ux)
 * [Deployment](#deployment)
@@ -145,7 +146,77 @@ whitenoise==6.2.0
 * Git was utilised for version control and transferring files between the code editor and the repository
 * GitHub was utilised for storing the files for this project
 
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
+
+## Agile Development
+
+<a name="agile"></a>
+
+### Agile Overview
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
+
+
+This project was started with my GitHub Projects [Page](https://github.com/users/ian-IBCIRL/projects/4) to track and manage the expected epics, user stories, milestones and other work and sprints involved.
+The purpose of Agile Development is to plan and measure progress for expected work and tasks, by listing the epics and then break them down into user stories or smaller tasks to ultimately finish the site in the allocated time.
+
+To see my Kanban board in the project, click [here](https://github.com/users/ian-IBCIRL/projects/4).
+
+At the initial stages I decided on core requirements for the project and some Nice to haves but not critical requirements.
+
+From these I added the user stories, acceptance criteria and the tasks so I can track my work effectively.
+
+Once I completed a task I note the item as completed and if all parts of this story were completed I would move it from **In Progress** to **Done** on the Kanban board. Acceptance criteria would also be noted where appropriate.
+
+At the end of a coding session I would update the user stories with a comment of:
+
+ - What was done
+ - What is left to be done
+ - Reminders to track where I finished so subsequent work would follow.
+
+#### Epics
+
+##### Completed Epics
+1 [EPIC: setup django and deploy the site](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/1)
+2 [EPIC: view and open posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/3)
+3 [EPIC: See and add/remove likes and see and add comments](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/15)
+4 [EPIC: Admin can manage posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/16)
+5 [EPIC: User sign up, login and CRUD posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/17)
+6 [EPIC: Testing](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/22)
+
+#### User stories
+
+#####  Completed User Stories
+
+To view details of the user stories please click on a user story below.
+See the project page for the full [list of issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue) to see the details and comments.
+See the Kanban page [here](https://github.com/users/ian-IBCIRL/projects/4/views/1)
+
+ 1. [USER STORY: Deploy Website](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/2)
+ 2. [USER STORY: View Post List](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/4)
+ 3. [USER STORY: Open a Post](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/5)
+ 4. [USER STORY: Account Registration](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/8)
+ 5. [USER STORY: Comment on a Post](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/9)
+ 6. [USER STORY: Edit My Posts Only](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/19)
+ 7. [USER STORY: Like / Unlike posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/10)
+ 8. [USER STORY: Delete Posts (CRUD)](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/9)
+ 9. [USER STORY: Testing](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/23)
+
+The following User stories were not completed as they are possible future features:
+
+ ##### Future Feature User stories
+ 
+ 1. [USER STORY: Garage Service Bookings](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/24)
+ 2. [USER STORY: Social Login](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/14)
+ 
+I decided against implementing some future features at this time due to deadlines and because the core requirements of the project have been satisfied elsewhere.
+
+---
+
 ## Testing
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#the-garage) 
 
 Testing was divided into different sections to ensure everything was tested individually with test cases developed for each area.
 
