@@ -180,12 +180,12 @@ At the end of a coding session I would update the user stories with a comment of
 
 ##### Completed Epics
 
-1 [EPIC: setup django and deploy the site](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/1)
-2 [EPIC: view and open posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/3)
-3 [EPIC: See and add/remove likes and see and add comments](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/15)
-4 [EPIC: Admin can manage posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/16)
-5 [EPIC: User sign up, login and CRUD posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/17)
-6 [EPIC: Testing](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/22)
+1. [EPIC: setup django and deploy the site](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/1)
+2. [EPIC: view and open posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/3)
+3. [EPIC: See and add/remove likes and see and add comments](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/15)
+4. [EPIC: Admin can manage posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/16)
+5. [EPIC: User sign up, login and CRUD posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/17)
+6. [EPIC: Testing](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/22)
 
 #### User stories
 
