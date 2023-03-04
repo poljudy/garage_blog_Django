@@ -128,6 +128,7 @@ Testing was divided into different sections to ensure everything was tested indi
 
 Details of the [testing](/assets/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/assets/testing/TESTING.md)
 
+The site was also tested for responsiveness here https://www.browserstack.com/responsive and here https://ui.dev/amiresponsive
 
 ### Bugs of note
 
