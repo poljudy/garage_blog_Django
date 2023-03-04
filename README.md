@@ -6,7 +6,7 @@ This is the Code Institute student PP4 readme for the project deployed to [https
 
 # The Garage
 
-### By [Ian Bowell](https://www.linkedin.com/in/ibowell/)
+### By [Ian Bowell](https://www.instagram.com/skianianiam/)
 
 ## **[Live site](https://ib-the-garage-pp4.herokuapp.com/)**
 
