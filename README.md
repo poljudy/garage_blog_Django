@@ -27,15 +27,16 @@ They can upload vehicle images for their vehicle post, link YouTube videos of th
 They can also like and unlike other users vehicle posts.
 
 ---
-In future I may add user profiles, and the ability to update and delete their own user profile. 
 
-This is the fourth project for the Code Institute Diploma in Software Development (E-commerce Applications).
+
+This is my fourth project for the Code Institute Diploma in Software Development (E-commerce Applications).
 
 The site provides role based permissions for users to interact with an SQL database. 
 
-It includes user authentication and Full CRUD functionality for Vehicle posts.
+The site includes user authentication and Full CRUD functionality for Vehicle posts.
 
-In future, I may add tables for components, stories, email verification, social media loging and User Profiles.
+In future, I may add tables for components, stories, email verification and social media login.
+In future I may add user profiles, and the ability to update and delete their own user profile, and associated posts. 
 
 ![Screenshot of homepage](./assets/screenshots/homepage.png)
 
@@ -79,6 +80,8 @@ The key enhancements I would like to add to the site in the future are:
 * The ability for users to message other users
 * The ability for users to login via social networks such as google or facebook
 * The ability for users to book service appointments with an experienced local mechanic at better rates than dealers
+* In future, I may add SQL tables with models and classes for vehicle components, stories, email verification and social media login.
+* In future I may add also user profiles, and the ability to update and delete their own user profile. 
 
 Some of the functionality above is provided by allauth which is already installed into the site.
 So it only has to be setup in order for it to function. 
