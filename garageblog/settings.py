@@ -40,7 +40,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-X_FRAME_OPTIONS = 'https://ui.dev/ https://techsini.com/ SAMEORIGIN'
+X_FRAME_OPTIONS = 'ALLOW-FROM https://ui.dev/ https://techsini.com/ SAMEORIGIN'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
