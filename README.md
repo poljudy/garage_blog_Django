@@ -20,7 +20,7 @@ It enables users to create and share vehicle posts with other users from around 
 It is targeted towards users who enjoy their vehicles and would like to share their vehicle posts with others. 
 I have explicitly and intentionally not limited the site to just cars, hence allowing any vehicle. 
 Posts are admin moderated and will be deleted if inappropriate.
-At the moment, users can publish their posts, although that may be limited in future, if irrelevant or inappropriate content is posted.
+At the moment, users can publish their posts, although they may be allowed moderated draft posts in future, if irrelevant or inappropriate content is posted.
 
 Users have the ability to create, update, read and delete their own vehicle posts.
 They can upload vehicle images for their vehicle post, link YouTube videos of their vehicle and websites. 
