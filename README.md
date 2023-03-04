@@ -16,12 +16,14 @@ This is the Code Institute student PP4 readme for the project deployed to https:
 
 ## Introduction
 The Garage is a website built in Django using Python, JavaScript, CSS and HTML. 
-It enables users to create and share vehicle with other users from around the world. 
+It enables users to create and share vehicle posts with other users from around the world. 
 It is targeted towards users who enjoy their vehicles and would like to share their vehicle posts with others. 
-I have explicitly and intentionally not limited the site to just cars, hence allowing any vehicle.
+I have explicitly and intentionally not limited the site to just cars, hence allowing any vehicle. 
+Posts are admin moderated and will be deleted if inappropriate.
+At the moment, users can publish their posts, although that may be limited in future, if irrelevant or inappropriate content is posted.
 
 Users have the ability to create, update, read and delete their own vehicle posts.
-They can upload images for their vehicle post, link YouTube videos of their vehicle and websites. 
+They can upload vehicle images for their vehicle post, link YouTube videos of their vehicle and websites. 
 They can also like and unlike other users vehicle posts.
 
 ---
