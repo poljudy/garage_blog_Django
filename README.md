@@ -3,6 +3,7 @@
 Welcome 
 
 This is the Code Institute student PP4 readme for the project deployed to [https://ib-the-garage-pp4.herokuapp.com/](https://ib-the-garage-pp4.herokuapp.com/)
+Note: To open any links in this README in a new browser tab, press CTRL + Click or right click and open in new tab/window.
 
 # The Garage
 
@@ -67,7 +68,7 @@ A homepage was built to welcome the user to the site and clearly convey the site
 Public domain images were found on https://www.pexels.com/search/car%20webp/
 
 #### Deleting posts
-Got post deletion working, although need to add "Are you sure?" logic"
+Got post deletion working, and have added "Are you sure?" logic"
 
 Thanks to this post https://stackoverflow.com/questions/51781841/delete-a-post-in-django 
 
