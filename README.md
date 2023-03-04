@@ -73,6 +73,8 @@ Got post deletion working, and have added "Are you sure?" logic"
 
 Thanks to this post https://stackoverflow.com/questions/51781841/delete-a-post-in-django 
 
+Have since got this working with class based views/functions for CRUD.
+
 ------
 
 ## Future Enhancments
