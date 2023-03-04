@@ -69,12 +69,63 @@ A homepage was built to welcome the user to the site and clearly convey the site
 
 Public domain images were found on https://www.pexels.com/search/car%20webp/
 
+#### User Features (with notification messages):
+
+ - **Users can** create an account with their username, password and e-mail (**Create**)
+ - **Users can** log into their account
+ - **Users can** log out of their account
+ - **Users can** make a vehicle post through the post vehicle form **(Create)**
+ - **Users can** view their posts from post list page (**Read**)
+ - **Users can** edit their post and change the image or any other information they have on their post (**Update**)
+ - **Users can** delete posts from the detail page (**Delete**)
+
+#### Account restrictions:
+ - **Users cannot** access the edit section of an post without being logged in
+ - **Users cannot** access the add post form until they sign up or login
+ - **Users cannot** edit their UserID as it is a primary key
+ - **Users cannot** edit other users posts
+ - **Users cannot** access the admin panel of the website unless they have admin status
+
 #### Deleting posts
 Got post deletion working, and have added "Are you sure?" logic"
 
 Thanks to this post https://stackoverflow.com/questions/51781841/delete-a-post-in-django 
 
 Have since got this working with class based views/functions for CRUD.
+
+### index.html
+
+#### Desktop website
+
+> Desktop Nav Bar
+
+![Desktop Nav Bar](static/images/readme_images/desktopnavbar.png)
+
+ - The desktop nav bar consists of a Home, Register and Login menu items. 
+ - If the user is not logged in they have the option to Register or Login.
+ - If the user is logged in they have the option to Create a post.
+ - If the user is logged in they have the option to logout.
+
+ - If the user is a superuser they could then also have access to the django admin panel through the link beside logout. 
+
+---
+
+### post_detail.html
+
+#### Desktop website
+
+> Post detail
+
+![Post Detail](static/images/readme_images/postdetail.png)
+
+ - If the user is logged in they have the option to Create a post.
+ - If the user is logged in they have the option to logout.
+ - If the user is logged in and the author of the post they have the option to Edit or Delete the post.
+
+ - If the user is a superuser they could then also have access to the django admin panel through the link beside logout. 
+
+---
+
 
 ------
 
