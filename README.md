@@ -163,9 +163,10 @@ The purpose of Agile Development is to plan and measure progress for expected wo
 
 To see my Kanban board in the project, click [here](https://github.com/users/ian-IBCIRL/projects/4).
 
-At the initial stages I decided on core requirements for the project and some Nice to haves but not critical requirements.
+At the initial stages I decided on core requirements ('must have' issues) for the project and some 'could have' issues but not critical requirements.
 
-From these I added the user stories, acceptance criteria and the tasks so I can track my work effectively.
+From these I added the associated Epics, user stories, acceptance criteria and the tasks so I can track my work effectively.
+I did also use [milestones](https://github.com/ian-IBCIRL/IB-PP4-MVP/milestones) as another way to visualise Epic completion status.
 
 Once I completed a task I note the item as completed and if all parts of this story were completed I would move it from **In Progress** to **Done** on the Kanban board. Acceptance criteria would also be noted where appropriate.
 
@@ -178,6 +179,7 @@ At the end of a coding session I would update the user stories with a comment of
 #### Epics
 
 ##### Completed Epics
+
 1 [EPIC: setup django and deploy the site](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/1)
 2 [EPIC: view and open posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/3)
 3 [EPIC: See and add/remove likes and see and add comments](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/15)
