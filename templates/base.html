@@ -73,6 +73,11 @@
                             <a class="dropdown-item text-red" href="{% url 'post-create' %}">Create</a>
                         </div>
                     </li>
+                        {% if user.is_superuser %}
+                        <li class="nav-item">
+                             <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i class="fa-solid fa-unlock"></i></a>
+                        </li>
+                        {% endif %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
