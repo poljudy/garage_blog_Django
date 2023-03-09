@@ -17,16 +17,17 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click 
 ![Responsive Site examples](assets/screenshots/responsive.png)
 
  - The site is fully responsive across multiple screen sizes and devices. 
- - I had to make significant security research, updates and testing to get this test to work.
+ - I had to carry out significant security research, updates and testing to get this test to work.
  - Most people simply removed x-frame checks with a Chrome addin. 
  - I did not think this a full solution so I implemented the following line in base.html
  - `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
  - are allowed to embed my site in theirs, with success above. 
  - This is a more informative and professionally production ready approach.
 
----
+### **[Link to Responsive Testing Examples on UI.dev](https://ui.dev/amiresponsive?url=https://ib-the-garage-pp4.herokuapp.com/)**
 
-## **[Repository](https://github.com/ian-IBCIRL/IB-PP4-MVP/)**
+
+---
 
 ## Introduction
 The Garage is a website built in Django using Python, JavaScript, CSS and HTML. 
