@@ -51,24 +51,13 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link text-red" href="{% url 'home' %}">List</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-red" href="{% url 'add_vehicle' %}">Add</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-red" href="{% url 'post-create' %}">Create</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-red" href="{% url 'post_vehicle_view' %}">Search</a>
-                    </li>
-                    <li class="nav-item dropdown">
+
+                   <li class="nav-item dropdown">
                         <a class="btn btn-secondary dropdown-toggle " href="{% url 'home' %}" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Vehicles
                         </a>
-                        <div class="dropdown-menu bg-dark">
+                        <div class="dropdown-menu bg-light">
                             <a class="dropdown-item text-red" href="{% url 'home' %}">List</a>
                             <a class="dropdown-item text-red" href="{% url 'post-create' %}">Create</a>
                         </div>

@@ -6,7 +6,7 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: black;
 }
 
 .red-o {
@@ -92,7 +92,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: black;
 }
 
 .posthead-link {
