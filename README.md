@@ -99,14 +99,33 @@ Have since got this working with class based views/functions for CRUD.
 
 > Desktop Nav Bar
 
-![Desktop Nav Bar](static/images/readme_images/desktopnavbar.png)
+![Desktop Nav Bar](assets/screenshots/desktopnavbar.png)
 
  - The desktop nav bar consists of a Home, Register and Login menu items. 
  - If the user is not logged in they have the option to Register or Login.
- - If the user is logged in they have the option to Create a post.
+
+> Logged in Nav Bar
+
+![Logged In Nav Bar](assets/screenshots/loggedinnavbar.png)
+
+ - If the user is logged in they have the option to Create a post via the Vehicles dropdown menu.
+
+> Dropdown Nav Bar
+
+![Dropdown In Nav Bar](assets/screenshots/loggedinnavbar-dropdown.png)
+
+ - The List option is just a way to go back to the home page at this time.
+ - I may add Search option here in due course.
+
  - If the user is logged in they have the option to logout.
 
  - If the user is a superuser they could then also have access to the django admin panel through the link beside logout. 
+
+> Admin Dropdown Nav Bar
+
+![Admin Logged In Nav Bar](assets/screenshots/admindesktopnavbar.png)
+
+
 
 ---
 
@@ -116,13 +135,51 @@ Have since got this working with class based views/functions for CRUD.
 
 > Post detail
 
-![Post Detail](static/images/readme_images/postdetail.png)
+![Post Detail](assets/screenshots/postdetail.png)
 
- - If the user is logged in they have the option to Create a post.
+> Create detail
+
+![Post Detail](assets/screenshots/postdetail-edit-create.png)
+
  - If the user is logged in they have the option to logout.
  - If the user is logged in and the author of the post they have the option to Edit or Delete the post.
 
- - If the user is a superuser they could then also have access to the django admin panel through the link beside logout. 
+> Edit or Delete detail
+
+![Post Detail](assets/screenshots/postdetail-edit-delete.png)
+
+> Delete check detail
+
+![Post Detail](assets/screenshots/postdetail-delete.png)
+
+
+
+ - If the user is logged in they have the option to comment on the post and get a notice that it is awaiting admin approval. They can also like or unlike posts.
+
+> Comment detail
+
+![Post Detail](assets/screenshots/postdetail-comment.png)
+
+> Comment Approval notice detail
+
+![Post Detail](assets/screenshots/postdetail-comment-approval.png)
+
+ - If the admin user is logged in they have the option to approve the comment on the post.
+
+> Comment Approval detail
+
+![Post Detail](assets/screenshots/postdetail-comment-approval-process.png)
+
+
+> Comment Approval Result
+
+![Post Detail](assets/screenshots/postdetail-comment-approved.png)
+
+
+
+
+
+
 
 ---
 
