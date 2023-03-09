@@ -125,6 +125,11 @@ To return to the main README click [here](/README.md)
 ![w3 Jigsaw CSS checker](/assets/testing/cssvalidation.png)
 #### Result: Pass - No Errors
 
+### JSHint Validation
+
+![w3 Jigsaw CSS checker](/assets/testing/jshintvalidation.png)
+#### Result: Pass - No Errors - note about bootstrap expected.
+
 ### PyLint Validation
 
 ![CodeInst Python checker](/assets/testing/pythonvalidation.png)
