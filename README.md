@@ -18,7 +18,7 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click 
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
 * [Technologies Used](#technologies-used)
-* [Agile Development](#agile)
+* [Agile Development](#agile-development)
 * [Testing](#testing)
 * [User Experience Design (UX)](#ux)
 * [Deployment](#deployment)
@@ -199,7 +199,7 @@ Have since got this working with class based views/functions for CRUD, leveragin
 
 ------
 
-## Future Enhancments
+## Future Enhancements
 There are a few enhancements to functionality that I would like to add in the future. 
 
 The key enhancements I would like to add to the site in the future are:
@@ -271,8 +271,6 @@ whitenoise==6.2.0
 * [Back to top of README.md](#the-garage) 
 
 ## Agile Development
-
-<a name="agile"></a>
 
 ### Agile Overview
 * [Back to table of contents](#table-of-contents) 
