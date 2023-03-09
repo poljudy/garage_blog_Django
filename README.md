@@ -523,6 +523,8 @@ To install the app in Heroku you need:
     
     in this case to run my driverblog app on the gunicorn wsgi webserver.
 
+Remember also to `python manage.py collectstatic`
+
 The project can now be deployed to Heroku at the website configured above.
 
 To log into the Heroku toolbelt CLI:
