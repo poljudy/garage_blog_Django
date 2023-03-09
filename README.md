@@ -12,22 +12,21 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click 
 
 ## **[Live site](https://ib-the-garage-pp4.herokuapp.com/)**
 
-> Responsive Examples of Live Site
-
-![Responsive Site examples](assets/screenshots/responsive.png)
-
- - The site is fully responsive across multiple screen sizes and devices. 
- - I had to carry out significant security research, updates and testing to get this test to work.
- - Most people simply removed x-frame checks with a Chrome addin. 
- - I did not think this a full solution so I implemented the following line in base.html
- - `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
- - are allowed to embed my site in theirs, with success above. 
- - This is a more informative and professionally production ready approach.
-
-### **[Link to Responsive Testing Examples on UI.dev](https://ui.dev/amiresponsive?url=https://ib-the-garage-pp4.herokuapp.com/)**
-
-
 ---
+
+## Table of Contents
+* [Features](#features)
+* [Future Enhancements](#future-enhancements)
+* [Technologies Used](#technologies-used)
+* [Agile Development](#agile)
+* [Testing](#testing)
+* [User Experience Design (UX)](#ux)
+* [Deployment](#deployment)
+* [Release History](#release-history)
+* [Credits](#credits)
+* [Reminders](#reminders)
+
+
 
 ## Introduction
 The Garage is a website built in Django using Python, JavaScript, CSS and HTML. 
@@ -35,7 +34,7 @@ It enables users to create and share vehicle posts with other users from around 
 It is targeted towards users who enjoy their vehicles and would like to share their vehicle posts with others. 
 I have explicitly and intentionally not limited the site to just cars, hence allowing any vehicle. 
 Posts are admin moderated and will be deleted if inappropriate.
-At the moment, users can publish their posts, although they may be allowed moderated draft posts in future, if irrelevant or inappropriate content is posted.
+At the moment, users can publish their posts, although they may be restricted to moderated draft posts in future, if irrelevant or inappropriate content is posted.
 
 Users have the ability to create, update, read and delete their own vehicle posts.
 They can upload vehicle images for their vehicle post, link YouTube videos of their vehicle and websites. 
@@ -50,8 +49,8 @@ The site provides role based permissions for users to interact with an SQL datab
 
 The site includes user authentication and Full CRUD functionality for Vehicle posts.
 
-In future, I may add tables for components, stories, email verification and social media login.
-In future I may add user profiles, and the ability to update and delete their own user profile, and associated posts. 
+In future, I may add tables for vehicle components, email verification and social media login.
+In future I may add user profile management by the user, and the ability to update and delete their own user profile, and associated posts. 
 
 ![Screenshot of homepage](./assets/screenshots/homepage.png)
 
@@ -59,18 +58,19 @@ In future I may add user profiles, and the ability to update and delete their ow
 
 Note: To open any links in this README in a new browser tab, press CTRL + Click.
 
-## Table of Contents
-* [Features](#features)
-* [Future Enhancements](#future-enhancements)
-* [Technologies Used](#technologies-used)
-* [Agile Development](#agile)
-* [Testing](#testing)
-* [User Experience Design (UX)](#ux)
-* [Deployment](#deployment)
-* [Release History](#release-history)
-* [Credits](#credits)
-* [Reminders](#reminders)
+> Responsive Examples of Live Site
 
+![Responsive Site examples](assets/screenshots/responsive.png)
+
+ - The site is fully responsive across multiple screen sizes and devices. 
+ - I had to carry out significant security research, updates and testing to get this test to work.
+ - Most people simply removed x-frame checks with a Chrome addin. 
+ - I did not think this a full solution so I implemented the following line in base.html
+ - `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
+ - are allowed to embed my site in theirs, with success above. 
+ - This is a more informative and professionally production ready approach.
+
+### **[Link to Responsive Testing Examples on UI.dev](https://ui.dev/amiresponsive?url=https://ib-the-garage-pp4.herokuapp.com/)**
 
 
 ## Features
@@ -100,11 +100,11 @@ Public domain images were found on https://www.pexels.com/search/car%20webp/
  - **Users cannot** access the admin panel of the website unless they have admin status
 
 #### Deleting posts
-Got post deletion working, and have added "Are you sure?" logic"
+Got post deletion working, and have added "Are you sure?" logic.
 
 Thanks to this post https://stackoverflow.com/questions/51781841/delete-a-post-in-django 
 
-Have since got this working with class based views/functions for CRUD.
+Have since got this working with class based views/functions for CRUD, leveraging Code Institute slack channels.
 
 ### index.html
 
