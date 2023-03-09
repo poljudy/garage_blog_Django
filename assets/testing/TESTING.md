@@ -128,7 +128,7 @@ To return to the main README click [here](/README.md)
 ### PyLint Validation
 
 ![CodeInst Python checker](/assets/testing/pythonvalidation.png)
-#### Result: Pass - No Errors
+#### Result: Pass - No Errors - and same across all files for pylint addin for Gitpod/VSCode.
 
 To return to the main README click [here](/README.md)
 
