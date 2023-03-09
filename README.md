@@ -251,7 +251,7 @@ whitenoise==6.2.0
 * Cloudinary Storage
     * Cloudinary Storage was used as the cloud storage of images and icons for this project during development and in production. Had to also use this for favicon.ico instead of static data when deployed to Heroku.
 * JavaScript
-    * Custom JavaScript was utilised to enable .
+    * Custom JavaScript was utilised to enable notification message timeouts.
 * Bootstrap 5.13
     * Bootstrap was used for general layout and spacing requirements for the site.
 * Font Awesome
