@@ -38,7 +38,7 @@ class Text:
         existing_slugs = []
         try:
             [existing_slugs.append(str(i.slug)) for i in model.objects.all()]
-        except:  # noqa - known issue - code used as is, per note above
+        except IndexError:
             print("There was no slug field found for {}".format(model))
             return slug
         if slug in existing_slugs:
