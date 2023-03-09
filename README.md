@@ -12,6 +12,18 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click 
 
 ## **[Live site](https://ib-the-garage-pp4.herokuapp.com/)**
 
+> Responsive Examples of Live Site
+
+![Responsive Site examples](assets/screenshots/responsive.png)
+
+ - The site is fully responsive across multiple screen sizes and devices. 
+ - I had to make significant security research, updates and testing to get this test to work.
+ - Most people simply removed x-frame checks with a Chrome addin. 
+ - I did not think this a full solution so I implemented the following line in base.html
+ - `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
+ - are allowed to embed my site in theirs, with success above. 
+ - This is a more informative and professionally production ready approach.
+
 ---
 
 ## **[Repository](https://github.com/ian-IBCIRL/IB-PP4-MVP/)**
@@ -335,6 +347,20 @@ Testing was divided into different sections to ensure everything was tested indi
 Details of the [testing](/assets/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/assets/testing/TESTING.md)
 
 The site was also tested for responsiveness here https://www.browserstack.com/responsive and here https://ui.dev/amiresponsive
+
+
+> Responsive Examples of Live Site
+
+![Responsive Site examples](assets/screenshots/responsive.png)
+
+ - The site is fully responsive across multiple screen sizes and devices. 
+ - I had to make significant security research, updates and testing to get this test to work.
+ - Most people simply removed x-frame checks with a Chrome addin. 
+ - I did not think this a full solution so I implemented the following line in base.html
+ - `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
+ - are allowed to embed my site in theirs, with success above. 
+ - This is a more informative and professionally production ready approach.
+
 
 ### Bugs of note
 

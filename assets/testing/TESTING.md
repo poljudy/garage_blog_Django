@@ -62,8 +62,8 @@ The welcome message is clearly visible to the user when they first see the site,
 |User can post when all required fields are completed | Pass |
 |User can post a published post when all required fields are completed | Pass |
 |User can post a draft post when all required fields are completed | Pass |
-|User tries to submit a post with empty form |Fail|
-|User tries to submit form without a title | Fail|
+|User tries to submit a post with empty form |Pass|
+|User tries to submit form without a title | Pass|
 |User can view their posts |Pass|
 |User can edit the posts |Pass|
 |Edit button does not present on confirmed bookings|Pass|
@@ -79,13 +79,9 @@ The welcome message is clearly visible to the user when they first see the site,
 
 | Test |Result  |
 |--|--|
-|User can edit their user name | Fail |
-|User can edit / add a profile image | Fail |
-|User can add / edit their email address|Fail|
 |User cannot register username to the same as another user|Pass|
 |User cannot register their email to the same as another user |Pass|
 |User presented with correct date and time on a post|Pass|
-|User can delete account |Fail|
 
 
 #### Admin Tests
@@ -105,27 +101,32 @@ The welcome message is clearly visible to the user when they first see the site,
 
 > index.html
 
-![Google Lighthouse Index](static/images/readme_images/lighthouseIndex.png)
+![Google Lighthouse Index](/assets/testing/main-page-lighthouse.png)
 
 > post_detail.html
 
-![Google Lighthouse Profile](static/images/readme_images/lighthous-postdetail.png)
+![Google Lighthouse Profile](/assets/testing/detail-page-lighthouse.png)
 
 
 ## HTML W3 Validation
 
 ### index.html
 
-![W3 Validation checker](static/images/readme_images/w3validation.png)
+![W3 Validation checker](/assets/testing/w3validation.png)
+#### Result: No Errors
+
+### post detail html
+
+![W3 Validation checker](/assets/testing/w3validation-detail.png)
 #### Result: No Errors
 
 ### CSS Validation
 
-![w3 Jigsaw CSS checker](static/images/readme_images/cssvalidation.png)
+![w3 Jigsaw CSS checker](/assets/testing/cssvalidation.png)
 #### Result: Pass - No Errors
 
 ### PyLint Validation
 
-![CodeInst Python checker](static/images/readme_images/pythonvalidation.png)
+![CodeInst Python checker](/assets/testing/pythonvalidation.png)
 #### Result: Pass - No Errors
 
