@@ -10,7 +10,7 @@ class CommentForm(forms.ModelForm):
 
 class PostForm(forms.ModelForm):
     """
-    Create a form where user can upload the detail of the car
+    Create a form where user can upload the detail of the vehicle
     """
     class Meta:
         """
@@ -60,6 +60,7 @@ class VehicleForm(forms.ModelForm):
             super(PostVehicle, self).__init__(*args, **kwargs)
 
 
+#  for future use
 class SparePartForm(forms.ModelForm):
     required_css_class = 'required-field'
     error_css_class = 'error-field'
@@ -73,6 +74,7 @@ class SparePartForm(forms.ModelForm):
         ]
 
 
+#  initial form earlier in development for reference
 class PostVehicleForm(forms.Form):
     name = forms.CharField(max_length=100)
     email = forms.EmailField()

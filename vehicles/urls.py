@@ -17,8 +17,6 @@ from .views import (
 
 urlpatterns = [
     path("", views.PostList.as_view(), name="home"),
-#    path("admin2", views.admin.as_view(), name="admin2"),
-#    path("admin/vehicles/post", admin.vehicles.post.as_view(), name="admin_post"),    # noqa
     path('delete/<post_id>', delete_post, name='delete'),
     path('post_vehicle/', post_vehicle, name='post_vehicle'),
     path('add_vehicle/', addVehicle, name='add_vehicle'),
@@ -28,13 +26,8 @@ urlpatterns = [
     path('<slug:slug>/update', PostUpdateView.as_view(), name='post_update'),
     path('<slug:slug>/delete', PostDeleteView.as_view(), name='post_delete'),
     path('like/<slug:slug>', PostLike.as_view(), name='post_like'),
-
-
-    #   path('edit_post/<post_id>',
-    #        views.add_edit_post, name='add_edit_post'),
-    #   path('delete_post/<post_id>',
-    #         views.delete_post, name='delete_post'),
-    #   path("search_vehicle", views.search_car, name="search_vehicle"),
+    #   Future menu items may be as follows
+    #   path("search_vehicle", views.search_vehicle, name="search_vehicle"),
     #   path('<slug:slug>/', views.search_vehicle,
     #         name='search_vehicle'),  # link to vehicle in search
 ]

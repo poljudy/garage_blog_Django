@@ -84,6 +84,7 @@ class Vehicle(models.Model):
         return reverse('home')
 
 
+#  for future use
 class SparePart(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="sparepart")

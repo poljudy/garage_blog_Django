@@ -22,6 +22,7 @@ class Text:
 
     def slugify_unique(model, title):
         '''
+        Sourced this function as is from the link above.
         Given a DB model and a title, return a unique slug that is unique \
         to all other slug fields of the given DB model.
 
@@ -37,7 +38,7 @@ class Text:
         existing_slugs = []
         try:
             [existing_slugs.append(str(i.slug)) for i in model.objects.all()]
-        except:
+        except:  # noqa - known issue - code used as is, per note above
             print("There was no slug field found for {}".format(model))
             return slug
         if slug in existing_slugs:
@@ -116,47 +117,6 @@ def delete_post(request, post_id=None):
     post_to_delete = Post.objects.get(id=post_id)
     post_to_delete.delete()
     return HttpResponseRedirect(reverse('home'))
-
-
-'''
-class PostVehicle(View):
-
-    def get(self, request, slug="big-car/", *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, pk=1)
-        comments = post.comments.filter(approved=True).order_by("-created_on")
-        liked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
-
-        return render(
-            request,
-            "templates/post_vehicle.html",
-            {
-                "post": post,
-                "comment_form": comment_form,
-            },
-        )
-
-    def post(self, request, slug="big-car/", *args, **kwargs):
-        """
-        Users can post their vehicle
-        """
-        post = get_object_or_404(Post, pk=1)
-        if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(request.user)
-        else:
-            post.likes.add(request.user)
-
-        return render(
-            request,
-            "templates/post_vehicle.html",
-            {
-                "post": post,
-                "comment_form": comment_form,
-            },
-        )
-'''
 
 
 class PostLike(View):
@@ -253,8 +213,6 @@ class PostUpdateView(
 
     def get_success_message(self, cleaned_data):
         return "%(slug)s updated successfully" % {'slug': self.object.slug}  # noqa
-#       return "Post updated successfully"   # noqa
-#       return "%(id)s updated created successfully" % {'id': self.object.id}  # noqa
 
 
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
