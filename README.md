@@ -341,8 +341,6 @@ I decided against implementing some future features at this time due to deadline
 
 Testing was divided into different sections to ensure everything was tested individually with test cases developed for each area.
 
-[Testing Schedule Overview](/assets/testing/test-schedule.pdf)
-
 Details of the [testing](/assets/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/assets/testing/TESTING.md)
 
 The site was also tested for responsiveness here https://www.browserstack.com/responsive and here https://ui.dev/amiresponsive
@@ -395,7 +393,7 @@ There are no known bugs left in the site.
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#the-garage) 
 
-*  The Garage is intended to be a friendly community site for users to create and share their own cars with others. Users will also be able to find cars created by other users from around the world. The graphical elements and overall design of the site provide the user with a fun and enjoyable environment.
+*  The Garage is intended to be a friendly community site for users to create and share details of their own vehicles with others. Users will also be able to scroll to find vehicles created by other users from around the world. A Search function may be added later. The graphical elements and overall design of the site provide the user with a fun and enjoyable environment.
 
 A [Full detailed breakdown](/assets/docs/UX.md) of the [UX and wireframes](/assets/docs/UX.md) methodology can be found in the UX.md file [here](/assets/docs/UX.md)
 

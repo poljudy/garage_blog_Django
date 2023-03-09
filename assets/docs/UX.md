@@ -19,12 +19,14 @@ The welcome message is clearly visible to the user when they first see the site,
 Initial public images were sourced from https://www.pexels.com/search/car/
 
 ## Home Page Wireframe
+I did not implement the search function or the user profile, as these were not required for the MVP PP4 criteria.
 To return to the main README click [here](/README.md)
 * [Back to top of UX.md](#ux) 
 
 ![Home Page Wireframe](/assets/wireframes/homepage-wireframea.png)
 
 ## Post Detail Wireframe
+I did not implement the search function or the user profile, as these were not required for the MVP PP4 criteria.
 To return to the main README click [here](/README.md)
 * [Back to top of UX.md](#ux) 
 
@@ -48,7 +50,7 @@ To return to the main README click [here](/README.md)
 To return to the main README click [here](/README.md)
 * [Back to top of UX.md](#ux) 
 
-![Home Page](/assets/wireframes/homepage-wireframe.png)
+![Home Page](/assets/screenshots/homepage.png)
 
 
 To return to the main README click [here](/README.md)

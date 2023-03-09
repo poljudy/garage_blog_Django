@@ -2,20 +2,16 @@
 ## Test Cases and Execution Report
 
 To return to the main README click [here](/README.md)
-* [Back to main table of contents](#testing-toc) 
+
 * [Back to top of TESTING.md](#testing) 
-
-## Testing TOC
-
-The full testing spreadsheet containing all the tests performed during the testing phase of development can be found [here](/assets/testing/test-schedule.pdf)
 
 ## Test Case 001
 
 Home page: The home page provides the user with a clear understanding as to the purpose of the site. 
-There is a clear call to action for the user to search for a car with the search bar at the top of the home page. 
+There is a clear call to action for the user to login or sign up at the top of the home page. 
 The welcome message is clearly visible to the user when they first see the site, using any device.
 
-![Home Page Wireframe](/assets/wireframes/homepage-wireframe.png)
+![Home Page Wireframe](/assets/screenshots/homepage.png)
 
 
 ### Testing Phase
@@ -93,6 +89,10 @@ The welcome message is clearly visible to the user when they first see the site,
 |Admin can delete posts on site|Pass|
 |Posts admin change display correctly on main site when updated / added|Pass|
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
+
 ---
 
 ## Google Lighthouse Testing
@@ -130,3 +130,6 @@ The welcome message is clearly visible to the user when they first see the site,
 ![CodeInst Python checker](/assets/testing/pythonvalidation.png)
 #### Result: Pass - No Errors
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
