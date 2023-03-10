@@ -351,7 +351,7 @@ The site was also tested for responsiveness here https://www.browserstack.com/re
 ![Responsive Site examples](assets/screenshots/responsive.png)
 
  - The site is fully responsive across multiple screen sizes and devices. 
- - I had to make significant security research, updates and testing to get this test to work.
+ - I had to carry out significant security research, updates and testing to get this test to work.
  - Most people simply removed x-frame checks with a Chrome addin. 
  - I did not think this a full solution so I implemented the following line in base.html
  - `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
