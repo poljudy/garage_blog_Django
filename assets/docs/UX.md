@@ -68,4 +68,34 @@ The model diagram below visually represents the structure of a PostgreSQL databa
 #### User model
 User model as part of the Django allauth library contains basic information about authenticated user and contains folowing fields: username, password,email
 
+#### BlogPost model
+
+- BlogPost model is model used for each blogpost uploaded by the user. 
+- It has foreign key to the User model to associate each post with the author who created it.
+- Using foreign keys to establish these relationships model it is associated with valid users in the system. 
+- The model has the following fields:
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+| title        | title      | CharField| max_length=200, unique=True  |
+| creator        | creator       |ForeignKey   | User, on_delete=models.CASCADE  |
+| category| category  | ForeignKey   | LearningCategory, on_delete=models.PROTECT, null=True     |
+|  slug   | slug   | SlugField   | max_length=100, unique=True  |
+| body       | body     |TextField |      |
+|  cover_image     | cover_image      | CloudinaryField  | 'image', default='placeholder'   |
+|  created_on     | created_on      | DateTimeField   | auto_now_add=True    |
+|  updated_on     | updated_on      | DateTimeField   | auto_now_add=True    |
+
+#### Comment model
+
+- Comment model is used for any user comment on a blog post. 
+- There are 2 foreign keys one associated to a user and the other to a blog post fields of this model are:
+
+| Name          | Database Key  | Field Type    | Validation |
+| ------------- | ------------- | ------------- | ---------- |
+| author         |  author          | ForeignKey | User, on_delete=models.CASCADE   |
+| created        | created       | DateTimeField    | auto_now_add=True   |
+| blogpost| blogpost   | ForeignKey   | BlogPost, on_delete=models.CASCADE, related_name='comments'     |
+| content    | content    | TextField    | max_length=500   |
+| status       | status      |BooleanField | max_length=255, default=True     |
 
