@@ -7,6 +7,7 @@ To return to the main README click [here](/README.md)
 * [User Profile Page Wireframe](#user-profile-page-wireframe) 
 * [Search Page Wireframe](#search-page-wireframe) 
 * [Home Page](#home-page) 
+* [Database](#database)
 
 ### The Skeleton Plane
 #### Wireframe mock-ups
@@ -52,7 +53,19 @@ To return to the main README click [here](/README.md)
 
 ![Home Page](/assets/screenshots/homepage.png)
 
+## Database
 
 To return to the main README click [here](/README.md)
 * [Back to top of UX.md](#ux) 
+
+I used PostgreSQL relational database management system for this app.
+The model diagram below visually represents the structure of a PostgreSQL database, including tables, columns, relationships, and constraints, that is actually stored in the database itself.
+
+![database model diagram](/assets/testing/databasemodel.png)
+
+### Data Models
+
+#### User model
+User model as part of the Django allauth library contains basic information about authenticated user and contains folowing fields: username, password,email
+
 
