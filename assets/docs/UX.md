@@ -85,7 +85,7 @@ User model as part of the Django allauth library contains basic information abou
 |  cover_image     | cover_image      | CloudinaryField  | 'image', default='placeholder'   |
 |  created_on     | created_on      | DateTimeField   | auto_now_add=True    |
 |  updated_on     | updated_on      | DateTimeField   | auto_now_add=True    |
-| youtube        | youtube      | CharField| max_length=200, unique=True  |
+| youtube_link        | youtube_link     | URLField| max_length=200  |
 
 #### Comment model
 
