@@ -61,7 +61,7 @@ To return to the main README click [here](/README.md)
 I used PostgreSQL relational database management system for this app.
 The model diagram below visually represents the structure of a PostgreSQL database, including tables, columns, relationships, and constraints, that is actually stored in the database itself.
 
-![database model diagram](/assets/testing/databasemodel.png)
+![database model diagram](/assets/docs/databasemodel.png)
 
 ### Data Models
 
