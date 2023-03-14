@@ -13,6 +13,10 @@ The welcome message is clearly visible to the user when they first see the site,
 
 ![Home Page Screenshot](/assets/screenshots/homepage.png)
 
+## Device responsiveness testing
+
+Device responsivness: Each page of the site was tested on a range of relevant devices and checked against the purpose of the page. 
+
 ![Device Responsiveness Testing](/assets/screenshots/responsiveness.png)
 
 
