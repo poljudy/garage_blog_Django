@@ -5,13 +5,15 @@ To return to the main README click [here](/README.md)
 
 * [Back to top of TESTING.md](#testing) 
 
-## Test Case 001
+## Home Page testing
 
 Home page: The home page provides the user with a clear understanding as to the purpose of the site. 
 There is a clear call to action for the user to login or sign up at the top of the home page. 
 The welcome message is clearly visible to the user when they first see the site, using any device.
 
-![Home Page Wireframe](/assets/screenshots/homepage.png)
+![Home Page Screenshot](/assets/screenshots/homepage.png)
+
+![Device Responsiveness Testing](/assets/screenshots/responsiveness.png)
 
 
 ### Testing Phase
