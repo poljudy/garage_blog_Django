@@ -82,7 +82,7 @@ User model as part of the Django allauth library contains basic information abou
 | category| category  | ForeignKey   | LearningCategory, on_delete=models.PROTECT, null=True     |
 |  slug   | slug   | SlugField   | max_length=100, unique=True  |
 | body       | body     |TextField |      |
-|  cover_image     | cover_image      | CloudinaryField  | 'image', default='placeholder'   |
+|  featured_image     | featured_image      | CloudinaryField  | 'image', default='placeholder'   |
 |  created_on     | created_on      | DateTimeField   | auto_now_add=True    |
 |  updated_on     | updated_on      | DateTimeField   | auto_now_add=True    |
 | youtube_link        | youtube_link     | URLField| max_length=200  |
