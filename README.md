@@ -276,11 +276,13 @@ whitenoise==6.2.0
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#the-garage) 
 
+To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue) click [here](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue)
 
-This project was started with my GitHub Projects [Page](https://github.com/users/ian-IBCIRL/projects/4) to track and manage the expected epics, user stories, milestones and other work and sprints involved.
+This project was started with my GitHub Projects [Page](https://github.com/users/ian-IBCIRL/projects/4) to track and manage the [issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue) such as expected epics, user stories, milestones and other work and sprints involved.
 The purpose of Agile Development is to plan and measure progress for expected work and tasks, by listing the epics and then break them down into user stories or smaller tasks to ultimately finish the site in the allocated time.
 
 To see my Kanban board in the project, click [here](https://github.com/users/ian-IBCIRL/projects/4).
+To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue) click [here](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue)
 
 At the initial stages I decided on core requirements ('must have' issues) for the project and some 'could have' issues but not critical requirements.
 
