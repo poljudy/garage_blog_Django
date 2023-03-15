@@ -29,10 +29,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top cld-responsive" alt="placeholder image for {{ post.title }}"
-                                    data-src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp">
+                                <img class="card-img-top" width="auto" alt="placeholder image for {{ post.title }}"
+                                    src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp">
                                 {% else %}
-                                <img class="card-img-top cld-responsive" alt="{{ post.title }}" data-src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" width="auto" alt="{{ post.title }}" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
