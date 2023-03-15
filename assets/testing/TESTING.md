@@ -17,6 +17,8 @@ The welcome message is clearly visible to the user when they first see the site,
 
 Device responsivness: Each page of the site was tested on a range of relevant devices and checked against the purpose of the page. 
 
+See more details in Lighthouse testing results and attempts to improve image loading with Cloudinary.
+
 ![Device Responsiveness Testing](/assets/screenshots/responsiveness.png)
 
 
@@ -106,6 +108,13 @@ To return to the main README click [here](/README.md)
 ### Desktop
 
 > index.html
+The lighthouse results do vary depending on Internet contention and time of day, affecting the load times for linked resources such as bootstrap, fonts, css and js.
+
+I did also try using Cloudinary responsive image features, but found it added further load.
+
+Details are [Here](https://cloudinary.com/blog/how_to_automatically_create_images_for_responsive_design) 
+
+And I also tried width="auto" to improve responsiveness.
 
 ![Google Lighthouse Index](/assets/testing/main-page-lighthouse.png)
 
