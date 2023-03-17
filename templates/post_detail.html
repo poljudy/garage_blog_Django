@@ -1,26 +1,30 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 {% load crispy_forms_tags %}
 
 <div class="masthead">
-    <div class="container"> 
+    <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                <!-- added the option to see the youtube link extending the model -->
                 {% if post.youtube_link %}
-                <p class="post-subtitle"><a class="posthead-link" target="_blank" href="{{ post.youtube_link }}">Video Clip Here</a></p>
+                <p class="post-subtitle"><a class="posthead-link" target="_blank" href="{{ post.youtube_link }}">Video
+                        Clip Here</a></p>
                 {% endif %}
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="img-fluid mx-auto" src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp" alt="placeholder" width="50%">
+                <img class="img-fluid mx-auto"
+                    src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp"
+                    alt="placeholder" width="50%">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" class="img-fluid mx-auto" alt="post image" >
+                <img src=" {{ post.featured_image.url }}" class="img-fluid mx-auto" alt="post image">
                 {% endif %}
             </div>
         </div>
@@ -37,20 +41,22 @@
                     {{ post.content | safe }}
                 </p>
                 <span>
-                {% if user.is_authenticated %}
+                    <!-- added checks for authenticated user (logged in) and 
+                     then if the user is the author they can see edit/delete buttons -->
+                    {% if user.is_authenticated %}
                     {% if user ==  post.author %}
-                        <h3>Edit Post as: {{ user.username }}</h3>
-                        <p>Author is: {{ post.author }}</p>
-                        <a href="{% url 'post_update' post.slug %}"> 
-                            <button type="submit" class="btn btn-success btn-lg">Edit</button>
-                        </a>
+                    <h3>Edit Post as: {{ user.username }}</h3>
+                    <p>Author is: {{ post.author }}</p>
+                    <a href="{% url 'post_update' post.slug %}">
+                        <button type="submit" class="btn btn-success btn-lg">Edit</button>
+                    </a>
 
-                        <h3>Delete Post as: {{ user.username }}:</h3>
-                         <a href="{% url 'post_delete' post.slug %}"> 
-                            <button type="submit" class="btn btn-danger btn-lg">Delete</button>
-                        </a>
+                    <h3>Delete Post as: {{ user.username }}:</h3>
+                    <a href="{% url 'post_delete' post.slug %}">
+                        <button type="submit" class="btn btn-danger btn-lg">Delete</button>
+                    </a>
                     {% endif %}
-                {% endif %}
+                    {% endif %}
                 </span>
                 <br>
 
@@ -59,14 +65,15 @@
                     <div class="col-1">
                         <strong>
                             {% if user.is_authenticated %}
+                            <!-- if the user is logged in they acan like or unlike a post -->
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="blogpost_id" aria-label="solid heart" value="{{post.slug}}" class="btn-like"><i
-                                        class="fas fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" aria-label="solid heart" value="{{post.slug}}"
+                                    class="btn-like"><i class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" aria-label="clear heart" value="{{post.slug}}" class="btn-like"><i
-                                        class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" aria-label="clear heart" value="{{post.slug}}"
+                                    class="btn-like"><i class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
@@ -123,7 +130,7 @@
                 </div>
                 {% else %}
                 {% if user.is_authenticated %}
-
+                <!-- if the user is logged in they comment on a post -->
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" style="margin-top: 1.3em;">

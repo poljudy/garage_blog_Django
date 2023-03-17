@@ -5,19 +5,14 @@
 {% load crispy_forms_tags %}
 
 <!-- If user is authenticated show form, else show login/register page link -->
+<!-- Alternative new post form for further development -->
 {% if user.is_authenticated %}
 <div class="container col-md-8 mb-3 p-5 rounded shadow">
     <h5 class="text-center">Let's add your vehicle!</h5>
     <hr class="red">
 
     <p>Posting as: {{ user.username }}</p>
-<!--     
-    <form method="post" style="margin-top: 1.3em;">
-        {{ comment_form | crispy }}
-        {% csrf_token %}
-        <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-    </form>
---> 
+    <!-- had to add the multipart/form data piece to get the form to work -->
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form | crispy }}

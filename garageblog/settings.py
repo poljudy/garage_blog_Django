@@ -40,10 +40,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+# Added a couple of X_FRAME_OPTIONS to allow responsive testing sites
+# Also added a CSP to base.html - see there for more
 X_FRAME_OPTIONS = 'ALLOW-FROM https://ui.dev/ https://techsini.com/ SAMEORIGIN'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
+# modified allowed hosts to include the deployed heroku site
 ALLOWED_HOSTS = ['ib-the-garage-pp4.herokuapp.com', 'localhost']
 
 # Application definition
@@ -81,6 +84,8 @@ MIDDLEWARE = [
 
 SITE_ID = 1
 
+# left this as bootstrap4 but could try bootstrap5 for
+# later development as currently meets MVP
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = '/'

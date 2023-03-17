@@ -512,6 +512,11 @@ To install django, `pip3 install 'django<4' gunicorn`
 and `pip3 install dj_database_url==0.5.0 psycopg2`
 and `pip3 install dj3-cloudinary-storage`
 
+Once all is installed, you can record the installed packages to requirements.txt 
+with `pip3 freeze > requirements.txt`
+
+and reload them with `pip3 install -r requirements.txt` 
+
 To create the essential manage.py file and the key step in enabling the site to launch
 use `django-admin startproject "put your appname here" .` don't forget the DOT at the end !!
 We used driverblog for our blog about cars and other vehicles.

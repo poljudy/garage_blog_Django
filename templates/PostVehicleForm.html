@@ -3,21 +3,40 @@
 {% load i18n %}
 {% block content %}
 {% load crispy_forms_tags %}
+
 <section class="account-container p-2 mt-2 mx-2">
+  {% if user.is_authenticated %}
   <div id="add-vehicle">
     <h2>Please enter your vehicle details</h2>
     <div class="form-container p-2 mt-2">
+      <!-- had to add the multipart/form data piece to get the form to work -->
       <form class="add-vehicle-form" action="." method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
 
         {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" >
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
         {% endif %}
         <button class="btn btn-signup right" type="submit">{% trans "Post" %}</button>
       </form>
     </div>
 
   </div>
+  {% else %}
+  <div class="container col-md-7 rounded shadow p-5 ">
+    <p>Please login or create an account to make a new post.</p>
+    <p> If you are a registered user, please
+      <span>
+        <a class="btn btn-outline-success button" href="{% url 'account_login' %}">Login</a>
+      </span>
+    </p>
+    <p>If you do not have an account, please
+      <span>
+        <a class="btn btn-outline-success button" href="{% url 'account_signup' %}">Sign Up</a>
+      </span>
+    </p>
+  </div>
+  {% endif %}
+
 </section>
 {% endblock content %}

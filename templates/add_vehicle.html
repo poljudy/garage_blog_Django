@@ -5,6 +5,7 @@
 {% load crispy_forms_tags %}
 <section class="account-container p-2 mt-2 mx-2">
     <div id="add-vehicle">
+        {% if user.is_authenticated %}
         <h2>Please create your vehicle post</h2>
 
         <div class="form-container p-2 mt-2">
@@ -14,15 +15,17 @@
                 <div class="flex mt-2 form-pair">
                     {{field.label_tag}}
                     {{field}}
-                 </div>
+                </div>
                 {% endfor %}
-            
-                
+
+
                 <button class="btn primary-action mt-2" type="submit" value="submit">Submit</button>
             </form>
-                        
+
         </div>
-         
+        {% else %}
+        <h2>You are not logged in !</h2>
+        {% endif %}
     </div>
 </section>
 {% endblock %}

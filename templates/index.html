@@ -2,8 +2,8 @@
 
 {% block content %}
 <section>
-    <h1>Welcome to <span class="brand">The <span
-        class="red-letter">G</span>arage<span class="thin">|blog</span></span> ! </h1>
+    <h1>Welcome to <span class="brand">The <span class="red-letter">G</span>arage<span class="thin">|blog</span></span>
+        ! </h1>
     <h2>The #1 site for vehicle enthusiasts.</h2>
     <h3>All welcome to post and comment...</h3>
     {% if user.is_authenticated %}
@@ -14,13 +14,14 @@
     {% endif %}
     {% else %}
     <a href="{% url 'account_login' %}" class="primary-action btn">Login or </a><br>
-    <a href="{% url 'account_signup' %}" class="primary-action btn">Sign up Now, and contribute your own posts and comments!</a>
+    <a href="{% url 'account_signup' %}" class="primary-action btn">Sign up Now, and contribute your own posts and
+        comments!</a>
     {% endif %}
 </section>
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Garage Blog Vehicle Entries Column -->
+        <!-- Garage Blog Vehicle Entries Column - a lot of this code came from the course baseline content -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -29,10 +30,12 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
+                                <!-- added placeholder image - used webp to improve performance -->
                                 <img class="card-img-top" width="auto" alt="placeholder image for {{ post.title }}"
                                     src="https://res.cloudinary.com/dqatluefd/image/upload/v1676557056/webp-blue-nissan_mg7nhr.webp">
                                 {% else %}
-                                <img class="card-img-top" width="auto" alt="{{ post.title }}" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" width="auto" alt="{{ post.title }}"
+                                    src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>

@@ -13,32 +13,43 @@
     <meta name="author" content="IBCIRL.com">
     <meta name="description" content="PP4 Django MVP for Drivers from Killorglin, Kerry, Ireland">
     <meta name="keywords" content="learning, driving, Killorglin, Kerry, Ireland">
-    
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' ui.dev techsini.com browserstack.com;" >
+
+    <!-- added CSP for responsiveness testing sites rather than chrome addin workaround -->
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' ui.dev techsini.com browserstack.com;">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://res.cloudinary.com">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dqatluefd/image/upload/v1677500258/favicon-pp4_hih8tl.ico">
-    
+    <!-- Favicon - had to load to my cloudinary to get it to work - didnt work as part of static in this version of Django -->
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/dqatluefd/image/upload/v1677500258/favicon-pp4_hih8tl.ico">
+
+    <!-- tried loading these later to improve performance but broke site so left as necessary -->
+    <!-- Depends on internet load for these sites also, so can get good performance out of hours -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- tried loading these later to improve performance but broke site so left as necessary -->
+    <!-- Depends on internet load for these sites also, so can get good performance out of hours -->
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
- 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- tried loading these later to improve performance but broke site so left as necessary -->
+    <!-- Depends on internet load for these sites also, so can get good performance out of hours -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 
 
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
-
+    <!-- Navigation - could possibly move to a separate nav.html but not needed for MVP -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">The <span
@@ -53,8 +64,8 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
-
-                   <li class="nav-item dropdown">
+                    <!-- added authenticated user menu option dropdown - expensive for performance but worth it -->
+                    <li class="nav-item dropdown">
                         <a class="btn btn-secondary dropdown-toggle " href="{% url 'home' %}" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Vehicles
@@ -64,11 +75,14 @@
                             <a class="dropdown-item text-red" href="{% url 'post-create' %}">Create</a>
                         </div>
                     </li>
-                        {% if user.is_superuser %}
-                        <li class="nav-item">
-                             <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i class="fa fa-unlock"></i>Admin</a>
-                        </li>
-                        {% endif %}
+                    {% if user.is_superuser %}
+                    <!-- added super user menu option to -->
+                    <!-- ease access to admin panel and maintaining/deleting posts/comments -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i
+                                class="fa fa-unlock"></i>Admin</a>
+                    </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
@@ -102,19 +116,27 @@
     </div>
     <main class="flex-shrink-0 main-bg">
         {% block content %}
-        <!-- Content Goes here -->
+        <!-- Content from other pages extending base.html Goes here -->
         {% endblock content %}
     </main>
 
-    <!-- Footer -->
+    <!-- Footer - considered having a separate html but not needed for MVP -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Made by Drivers</p>
-        <p class="m-0 text-center text-white">Follow us: 
-            <a href="https://www.facebook.com/" target="_blank" class="btn btn-floating btn-lg text-white"><i class="fab fa-facebook-square ms-3"></i> FB</a>
-            <a href="https://www.twitter.com/ianbowell" target="_blank" class="btn btn-floating btn-lg text-white"><i class="fab fa-twitter-square ms-3"></i> TW</a>
-            <a href="https://www.instagram.com/skianianiam" target="_blank" class="btn btn-floating btn-lg text-white"><i class="fab fa-instagram-square ms-3"></i> IG</a>
-            <a href="https://www.youtube.com/" target="_blank" class="btn btn-floating btn-lg text-white"><i class="fab fa-youtube-square ms-3"></i> YT</a></p>
+        <p class="m-0 text-center text-white">Follow us:
+            <!-- added some personalised links to original CodeInstitute code provided in the course  -->
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn-floating btn-lg text-white"><i
+                    class="fab fa-facebook-square ms-3"></i> FB</a>
+            <a href="https://www.twitter.com/ianbowell" target="_blank" class="btn btn-floating btn-lg text-white"><i
+                    class="fab fa-twitter-square ms-3"></i> TW</a>
+            <a href="https://www.instagram.com/skianianiam" target="_blank"
+                class="btn btn-floating btn-lg text-white"><i class="fab fa-instagram-square ms-3"></i> IG</a>
+            <a href="https://www.youtube.com/" target="_blank" class="btn btn-floating btn-lg text-white"><i
+                    class="fab fa-youtube-square ms-3"></i> YT</a></p>
     </footer>
+    <!-- had fun getting this script originally provided in course to 
+         stop erroring to the console due to null in alert.close() when no messages present 
+         put additional if statement to check if messages is true/not null -->
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');

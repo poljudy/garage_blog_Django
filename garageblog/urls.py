@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# baseline urlpatterns including those from the MVP vehicle app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("vehicles.urls"), name="vehicles-urls"),

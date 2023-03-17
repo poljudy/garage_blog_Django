@@ -2,6 +2,10 @@ body {
     background-color: #F9FAFC;
 }
 
+/* most of this is imported from the original Django project but */
+/* have commented where colour changes were used mainly for accessibility issues */
+
+/* updated font colour here to address Aria accessibility contrast issues */
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -13,6 +17,7 @@ body {
     color: #E84610;
 }
 
+/* added this style for the updated title for the site */
 .red-letter {
     color: #e81010;
 }

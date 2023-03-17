@@ -113,6 +113,7 @@ class PostDetail(View):
         )
 
 
+@login_required
 def delete_post(request, post_id=None):
     post_to_delete = Post.objects.get(id=post_id)
     post_to_delete.delete()
@@ -131,6 +132,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+@login_required
 def post_vehicle_view(request):
     if request.method == 'POST':
         form = PostVehicleForm(request.POST)
@@ -142,6 +144,7 @@ def post_vehicle_view(request):
     return render(request, 'PostVehicleForm.html', {'form': form})
 
 
+@login_required
 def post_vehicle(request):
     if request.method == 'POST':
         form = PostVehicleForm(request.POST)
@@ -221,6 +224,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         post = self.get_object()
+        # making sure the user is the author before deleting
         if self.request.user == post.author:
             return True
         return False

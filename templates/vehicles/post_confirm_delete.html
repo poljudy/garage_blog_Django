@@ -2,9 +2,11 @@
 {% load static %}
 {% load i18n %}
 {% block content %}
-
-<section class="account-container p-2 mt-2 mx-2"> 
+<!-- Modified this section for the MVP to confirm a post deletion -->
+<section class="account-container p-2 mt-2 mx-2">
     <div id="delete-vehicle">
+        {% if user.is_authenticated %}
+        {% if user ==  post.author %}
         <h2>Please confirm your post deletion !</h2>
 
         <div class="form-container p-2 mt-2">
@@ -13,15 +15,19 @@
                 <fieldset class="form-group">
                     <legend class="border-bottom mb4">Warning - Deleting Post</legend>
                     <h2>Are you sure you want to delete post "{{ object.title }}"</h2>
-                    </fieldset>
-                
+                </fieldset>
+                <!-- Modified this section for the btn-outline-danger, success and secondary  -->
                 <button class="btn btn-outline-danger primary-action mt-2" type="submit">Yes, Delete!</button>
                 <a class="btn btn-outline-success mt-2" href="{% url 'home' %}">Cancel</a>
                 <a class="btn btn-outline-secondary mt-2" href="/">Home Page</a>
             </form>
-                        
         </div>
-         
+        {% else %}
+        <h2>You are not the author of the post for deletion !</h2>
+        {% endif %}
+        {% else %}
+        <h2>You are not logged in for post deletion !</h2>
+        {% endif %}
     </div>
 
-{% endblock %}
+    {% endblock %}

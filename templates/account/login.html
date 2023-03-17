@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
       <h3>{% trans "Sign In" %}</h3>
-
+      <!-- Modified this section for the MVP site specific details -->
       <p>{% blocktrans %}Welcome back to the Garage|blog. To leave a comment or like a post, please log in. If you
         have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
         first.{% endblocktrans %}</p>
@@ -22,8 +22,9 @@
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" >
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
         {% endif %}
+        <!-- Modified this section for the button type as btn-success -->
         <button class="btn btn-success right" type="submit">{% trans "Sign In" %}</button>
       </form>
     </div>
