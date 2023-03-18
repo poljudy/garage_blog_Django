@@ -4,6 +4,8 @@
 To return to the main README click [here](/README.md)
 
 * [Back to top of TESTING.md](#testing) 
+* [Go to the automated testing section](#automated-testing) 
+
 
 ## Home Page testing
 
@@ -153,3 +155,19 @@ And I also tried width="auto" to improve responsiveness.
 To return to the main README click [here](/README.md)
 
 * [Back to top of TESTING.md](#testing) 
+
+## Automated testing
+
+Automated testing not was conducted but could have been done using the "unittest" module from the Python standard library. This library is is integrated into Django's unit tests. 
+
+The first step in automated testing is to check the coverage with the `coverage report` command. This shows the name of each file in the project, the number of statements and and test miss/fail, resuting in a percentage coverage for the file and the project as a whole.
+
+All tests in the project can be run with the `./manage.py test' command
+
+Individual folders can be tested such as `./manage.py test garageblog` for the main project python files, with an associated coverage report.
+
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
+
+
