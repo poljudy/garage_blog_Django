@@ -31,18 +31,18 @@ See more details in Lighthouse testing results and attempts to improve image loa
 > If the expected outcome appears then a given test will be noted as a pass. If it does not then a fail is noted.
 
 #### Account Registration Tests
-| Test |Result  |
-|--|--|
-| User can create account | Pass |
-| User can log into account| Pass|
-|User can log out of account|Pass|
+| Test |Expected Result | Actual Result  |
+|--|--|--|
+| User can create account | the sign up page creates a new user when correctly completed | Pass |
+| User can log into account| the new user can sign in and their name appears in the main page and subsequent posts made | Pass|
+|User can log out of account| the logout option returns to the main non logged in page with the register and login options| Pass|
 
 ---
 
 #### User Navigation Tests
 
 | Test | Expected Result | Actual Result  |
-|--|--|
+|--|--|--|
 |User can navigate to Post Details | Post details are displayed when post clicked in list | Pass |
 |User can access menu items| Menu items are appropriate to state and appear in dropdow for CRUD | Pass|
 |SuperUser can access admin panel| Admin user menu item appears and goes to Admin page |Pass|
@@ -52,7 +52,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 #### Account Security Tests
 
 | Test |Expected Result | Actual Result  |
-|--|--|
+|--|--|--|
 |Non logged in user cannot add a post | non loggd in User cannot create a post (cut and paste create link) and returns to the login page |Pass |
 |Non logged in user cannot edit a post | non logged in User cannot edit a post (cut and paste edit link) and returns to login page | Pass|
 |Non superuser cannot access admin panel| User not logged in trying to get to admin link fails and goes to admin login page | Pass|
@@ -62,7 +62,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 #### Vehicle Post Tests
 
 | Test |Expected Result | Actual Result  |
-|--|--|
+|--|--|--|
 |User can post when all required fields are completed | if fields are missing, informative errors are flagged, and posts successfully when form is complete | Pass |
 |User can post a published post when all required fields are completed | user has the option to publish the post | Pass |
 |User can post a draft post when all required fields are completed | user has the option to post a draft post which then needs to be edited to be published | Pass |
@@ -82,7 +82,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 #### Account Tests
 
 | Test |Expected Result | Actual Result  |
-|--|--|
+|--|--|--|
 |User cannot register username to the same as another user| trying an existing username fails if it already exists |Pass|
 |User cannot register their email to the same as another user | trying an existing email fails if it is already recorded |Pass|
 |User presented with correct date and time on a post | Date and time are shown correctly for time of post submission  |Pass|
@@ -91,7 +91,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 #### Admin Tests
 
 | Test |Expected Result | Actual Result  |
-|--|--|
+|--|--|--|
 |Admin can add posts to site| Admin panel has the option to add posts and posts appear when published  |Pass|
 |Admin can edit posts on site| Admin panel can edit posts and updates show on posts |Pass|
 |Admin can delete posts on site| Admin panel has delete option and posts disappear when deleted |Pass|
