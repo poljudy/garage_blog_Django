@@ -41,61 +41,61 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 #### User Navigation Tests
 
-| Test |Result  |
+| Test | Expected Result | Actual Result  |
 |--|--|
-|User can navigate to Post Details | Pass |
-|User can access menu items| Pass|
-|SuperUser can access admin panel|Pass|
+|User can navigate to Post Details | Post details are displayed when post clicked in list | Pass |
+|User can access menu items| Menu items are appropriate to state and appear in dropdow for CRUD | Pass|
+|SuperUser can access admin panel| Admin user menu item appears and goes to Admin page |Pass|
 
 ---
 
 #### Account Security Tests
 
-| Test |Result  |
+| Test |Expected Result | Actual Result  |
 |--|--|
-|Non logged in user cannot add a post | Pass |
-|Non logged in user cannot edit a post | Pass|
-|Non superuser cannot access admin panel|Pass|
+|Non logged in user cannot add a post | non loggd in User cannot create a post (cut and paste create link) and returns to the login page |Pass |
+|Non logged in user cannot edit a post | non logged in User cannot edit a post (cut and paste edit link) and returns to login page | Pass|
+|Non superuser cannot access admin panel| User not logged in trying to get to admin link fails and goes to admin login page | Pass|
 
 ---
 
 #### Vehicle Post Tests
 
-| Test |Result  |
+| Test |Expected Result | Actual Result  |
 |--|--|
-|User can post when all required fields are completed | Pass |
-|User can post a published post when all required fields are completed | Pass |
-|User can post a draft post when all required fields are completed | Pass |
-|User tries to submit a post with empty form |Pass|
-|User tries to submit form without a title | Pass|
-|User can view their posts |Pass|
-|User can edit the posts |Pass|
-|Edit button does not present on confirmed bookings|Pass|
-|Edit button does not present on declined bookings |Pass|
-|User can delete a post|Pass|
-|User presented with a further check when they click delete|Pass|
-|User can like/unlike a post | Pass |
-|User can comment on a post when all required fields are completed | Pass |
+|User can post when all required fields are completed | if fields are missing, informative errors are flagged, and posts successfully when form is complete | Pass |
+|User can post a published post when all required fields are completed | user has the option to publish the post | Pass |
+|User can post a draft post when all required fields are completed | user has the option to post a draft post which then needs to be edited to be published | Pass |
+|User tries to submit a post with empty form is not possible | if form is blank the post does not submit |Pass|
+|User tries to submit form without a title | if the title is blank the user is informed and the post does not submit until completed | Pass|
+|User can view their posts | user can see the posts in the list/home page when submitted |Pass|
+|User can edit the posts | user can only see the edit button on their post detail |Pass|
+|Edit button does not present on other users posts| User only gets edit button on their posts |Pass|
+|Delete button does not present on other users posts | User only sees the delete button on their post |Pass|
+|User can delete a post | User sees delete button on their own posts |Pass|
+|User presented with a further check when they click delete| site further confirms a second check for deleting posts  |Pass|
+|User can like/unlike a post | the like count increases/decreases and changes colour according to like/unlike status| Pass |
+|User can comment on a post when all required fields are completed | Comment form is available to all logged in users and can be submitted when complete. it then appears once approved by admin | Pass |
 
 --- 
 
 #### Account Tests
 
-| Test |Result  |
+| Test |Expected Result | Actual Result  |
 |--|--|
-|User cannot register username to the same as another user|Pass|
-|User cannot register their email to the same as another user |Pass|
-|User presented with correct date and time on a post|Pass|
+|User cannot register username to the same as another user| trying an existing username fails if it already exists |Pass|
+|User cannot register their email to the same as another user | trying an existing email fails if it is already recorded |Pass|
+|User presented with correct date and time on a post | Date and time are shown correctly for time of post submission  |Pass|
 
 
 #### Admin Tests
 
-| Test |Result  |
+| Test |Expected Result | Actual Result  |
 |--|--|
-|Admin can add posts to site|Pass|
-|Admin can edit posts on site|Pass|
-|Admin can delete posts on site|Pass|
-|Posts admin change display correctly on main site when updated / added|Pass|
+|Admin can add posts to site| Admin panel has the option to add posts and posts appear when published  |Pass|
+|Admin can edit posts on site| Admin panel can edit posts and updates show on posts |Pass|
+|Admin can delete posts on site| Admin panel has delete option and posts disappear when deleted |Pass|
+|Posts admin change display correctly on main site when updated / added| Changes appear when main site is viewed |Pass|
 
 To return to the main README click [here](/README.md)
 
