@@ -160,6 +160,13 @@ To return to the main README click [here](/README.md)
 
 Automated testing not was conducted but could have been done using the "unittest" module from the Python standard library. This library is is integrated into Django's unit tests. 
 
+I did consider following/modifying the instructions to set up automated testing on this [page](https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project).
+But as automated testing is not required for the MVP, I did not want take the risk of breaking the MVP.
+I will fork the MVP and try automated testing later.
+
+The link I reviewed is also here.
+https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project
+
 The first step in automated testing is to check the coverage with the `coverage report` command. This shows the name of each file in the project, the number of statements and and test miss/fail, resuting in a percentage coverage for the file and the project as a whole.
 
 All tests in the project can be run with the `./manage.py test' command
