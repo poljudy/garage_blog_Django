@@ -2,12 +2,19 @@
 
 To return to the main README click [here](/README.md)
 
-* [Home Page Wireframe](#home-page-wireframe) 
-* [Post Detail Wireframe](#post-detail-wireframe) 
-* [User Profile Page Wireframe](#user-profile-page-wireframe) 
-* [Search Page Wireframe](#search-page-wireframe) 
-* [Home Page](#home-page) 
-* [Database](#database)
+- [UX](#ux)
+    - [The Skeleton Plane](#the-skeleton-plane)
+      - [Wireframe mock-ups](#wireframe-mock-ups)
+  - [Home Page Wireframe](#home-page-wireframe)
+  - [Post Detail Wireframe](#post-detail-wireframe)
+  - [User Profile Page Wireframe](#user-profile-page-wireframe)
+  - [Search Page Wireframe](#search-page-wireframe)
+  - [Home Page](#home-page)
+  - [Database](#database)
+    - [Data Models](#data-models)
+      - [User model](#user-model)
+      - [Vehicle model](#vehicle-model)
+      - [Comment model](#comment-model)
 
 ### The Skeleton Plane
 #### Wireframe mock-ups
