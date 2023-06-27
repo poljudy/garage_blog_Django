@@ -26,13 +26,13 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 ### Testing Phase
 
-#### Manual Testing
+### Manual Testing
 
 > Each user story was manually tested in line with intended functionality on both desktop & mobile.
 > As this project was detailed by User Stories, manual testing was sufficient for all code, and met project requirements.
 > If the expected outcome appears then a given test will be noted as a pass. If it does not then a fail is noted.
 
-#### Account Registration Tests
+## Account Registration Tests
 | Test |Expected Result | Actual Result  |
 |--|--|--|
 | User can create account | the sign up page creates a new user when correctly completed | Pass |
@@ -41,7 +41,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 ---
 
-#### User Navigation Tests
+## User Navigation Tests
 
 | Test | Expected Result | Actual Result  |
 |--|--|--|
@@ -51,7 +51,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 ---
 
-#### Account Security Tests
+## Account Security Tests
 
 | Test |Expected Result | Actual Result  |
 |--|--|--|
@@ -61,7 +61,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 ---
 
-#### Vehicle Post Tests
+### Vehicle Post Tests
 
 | Test |Expected Result | Actual Result  |
 |--|--|--|
@@ -81,7 +81,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 --- 
 
-#### Account Tests
+### Account Tests
 
 | Test |Expected Result | Actual Result  |
 |--|--|--|
@@ -90,7 +90,7 @@ See more details in Lighthouse testing results and attempts to improve image loa
 |User presented with correct date and time on a post | Date and time are shown correctly for time of post submission  |Pass|
 
 
-#### Admin Tests
+### Admin Tests
 
 | Test |Expected Result | Actual Result  |
 |--|--|--|
@@ -130,27 +130,27 @@ And I also tried width="auto" to improve responsiveness.
 ### index.html
 
 ![W3 Validation checker](/assets/testing/w3validation.png)
-#### Result: No Errors
+### Result: No Errors
 
 ### post detail html
 
 ![W3 Validation checker](/assets/testing/w3validation-detail.png)
-#### Result: No Errors
+### Result: No Errors
 
 ### CSS Validation
 
 ![w3 Jigsaw CSS checker](/assets/testing/cssvalidation.png)
-#### Result: Pass - No Errors
+### Result: Pass - No Errors
 
 ### JSHint Validation
 
 ![w3 Jigsaw CSS checker](/assets/testing/jshintvalidation.png)
-#### Result: Pass - No Errors - note about bootstrap expected.
+### Result: Pass - No Errors - note about bootstrap expected.
 
 ### PyLint Validation
 
 ![CodeInst Python checker](/assets/testing/pythonvalidation.png)
-#### Result: Pass - No Errors - and same across all files for pylint addin for Gitpod/VSCode.
+### Result: Pass - No Errors - and same across all files for pylint addin for Gitpod/VSCode.
 
 To return to the main README click [here](/README.md)
 
@@ -165,13 +165,22 @@ But as automated testing is not required for the MVP, I did not want take the ri
 I will fork the MVP and try automated testing later.
 
 The link I reviewed is also here.
+
 https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project
 
-The first step in automated testing is to check the coverage with the `coverage report` command. This shows the name of each file in the project, the number of statements and and test miss/fail, resuting in a percentage coverage for the file and the project as a whole.
+The first step in automated testing is to check the coverage with the 
+
+`coverage report` command.
+
+This shows the name of each file in the project, the number of statements and and test miss/fail, resuting in a percentage coverage for the file and the project as a whole.
 
 All tests in the project can be run with the `./manage.py test' command
 
-Individual folders can be tested such as `./manage.py test garageblog` for the main project python files, with an associated coverage report.
+Individual folders can be tested such as 
+
+`./manage.py test garageblog`
+
+for the main project python files, with an associated coverage report.
 
 To return to the main README click [here](/README.md)
 
