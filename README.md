@@ -8,8 +8,6 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click 
 
 # The Garage
 
-### By [Ian Bowell](https://www.instagram.com/skianianiam/)
-
 ## **[Live site](https://ib-the-garage-pp4.herokuapp.com/)**
 
 ---
@@ -276,18 +274,14 @@ whitenoise==6.2.0
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#the-garage) 
 
-To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) click [here](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue+sort%3Acreated-asc)
-
-This project was started with my GitHub Projects [Page](https://github.com/users/ian-IBCIRL/projects/4) to track and manage the [issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) such as expected epics, user stories, milestones and other work and sprints involved.
+This project was started with my GitHub Projects Page to track and manage the issues such as expected epics, user stories, milestones and other work and sprints involved.
 The purpose of Agile Development is to plan and measure progress for expected work and tasks, by listing the epics and then break them down into user stories or smaller tasks to ultimately finish the site in the allocated time.
 
-To see my Kanban board in the project, click [here](https://github.com/users/ian-IBCIRL/projects/4).
-To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) click [here](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue+sort%3Acreated-asc)
 
 At the initial stages I decided on core requirements ('must have' issues) for the project and some 'could have' issues but not critical requirements.
 
 From these I added the associated Epics, user stories, acceptance criteria and the tasks so I can track my work effectively.
-I did also use [milestones](https://github.com/ian-IBCIRL/IB-PP4-MVP/milestones) as another way to visualise Epic completion status.
+I did also use milestones as another way to visualise Epic completion status.
 
 Once I completed a task I note the item as completed and if all parts of this story were completed I would move it from **In Progress** to **Done** on the Kanban board. Acceptance criteria would also be noted where appropriate.
 
@@ -301,37 +295,36 @@ At the end of a coding session I would update the user stories with a comment of
 
 ##### Completed Epics
 
-1. [EPIC: setup django and deploy the site](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/1)
-2. [EPIC: view and open posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/3)
-3. [EPIC: See and add/remove likes and see and add comments](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/15)
-4. [EPIC: Admin can manage posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/16)
-5. [EPIC: User sign up, login and CRUD posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/17)
-6. [EPIC: Testing](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/22)
+1. EPIC: setup django and deploy the site]
+2. EPIC: view and open posts
+3. EPIC: See and add/remove likes and see and add comments
+4. EPIC: Admin can manage posts
+5. EPIC: User sign up, login and CRUD posts
+6. EPIC: Testing
 
 #### User stories
 
 #####  Completed User Stories
 
 To view details of the user stories please click on a user story below.
-See the project page for the full [list of issues](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues?q=is%3Aissue) to see the details and comments.
-See the Kanban page [here](https://github.com/users/ian-IBCIRL/projects/4/views/1)
+See the project page for the full [list of issues](https://github.com/poljudy/garage_blog_Django/issues?q=is%3Aissue) to see the details and comments.
 
- 1. [USER STORY: Deploy Website](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/2)
- 2. [USER STORY: View Post List](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/4)
- 3. [USER STORY: Open a Post](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/5)
- 4. [USER STORY: Account Registration](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/8)
- 5. [USER STORY: Comment on a Post](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/9)
- 6. [USER STORY: Edit My Posts Only](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/19)
- 7. [USER STORY: Like / Unlike posts](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/10)
- 8. [USER STORY: Delete Posts (CRUD)](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/9)
- 9. [USER STORY: Testing](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/23)
+ 1. [USER STORY: Deploy Website](https://github.com/poljudy/garage_blog_Django/issues/2)
+ 2. [USER STORY: View Post List](https://github.com/poljudy/garage_blog_Django/issues/4)
+ 3. [USER STORY: Open a Post](https://github.com/poljudy/garage_blog_Django/issues/5)
+ 4. [USER STORY: Account Registration](https://github.com/poljudy/garage_blog_Django/issues/8)
+ 5. [USER STORY: Comment on a Post](https://github.com/poljudy/garage_blog_Django/issues/9)
+ 6. [USER STORY: Edit My Posts Only](https://github.com/poljudy/garage_blog_Django/issues/19)
+ 7. [USER STORY: Like / Unlike posts](https://github.com/poljudy/garage_blog_Django/issues/10)
+ 8. [USER STORY: Delete Posts (CRUD)](https://github.com/poljudy/garage_blog_Django/issues/9)
+ 9. [USER STORY: Testing](https://github.com/poljudy/garage_blog_Django/issues/23)
 
 The following User stories were not completed as they are possible future features:
 
  ##### Future Feature User stories
  
- 1. [USER STORY: Garage Service Bookings](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/24)
- 2. [USER STORY: Social Login](https://github.com/ian-IBCIRL/IB-PP4-MVP/issues/14)
+ 1. [USER STORY: Garage Service Bookings](https://github.com/poljudy/garage_blog_Django/issues/24)
+ 2. [USER STORY: Social Login](https://github.com/poljudy/garage_blog_Django/issues/14)
  
 I decided against implementing some future features at this time due to deadlines and because the core requirements of the project have been satisfied elsewhere.
 
@@ -446,14 +439,14 @@ To deploy the project through Heroku I followed these steps:
 By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository
 This can be done by
     * Log into GitHub or create an account.
-    * Locate the repository at https://github.com/Ian-IBCIRL/IB-PP4-MVP.
+    * Locate the repository at https://github.com/poljudy/garage_blog_Django.
     * At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
     * A copy of the repository should now be created in your own repository.
 
 #### Create a clone of this repository
 Creating a clone enables you to make a copy of the repository at that point in time - this lets you run a copy of the project locally:
 This can be done by:
-* Navigate to https://github.com/Ian-IBCIRL/IB-PP4-MVP
+* Navigate to https://github.com/poljudy/garage_blog_Django
 * click on the arrow on the green code button at the top of the list of files
 * select the clone by https option and copy the URL it provides to the clipboard
 * navigate to your code editor of choice and within the terminal change the directory to the location you want to clone the repository to.
